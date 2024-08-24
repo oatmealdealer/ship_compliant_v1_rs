@@ -1339,7 +1339,7 @@ pub mod types {
             default,
             skip_serializing_if = "Option::is_none"
         )]
-        pub date_of_birth: Option<chrono::DateTime<chrono::offset::Utc>>,
+        pub date_of_birth: Option<chrono::NaiveDateTime>,
         #[serde(default, skip_serializing_if = "Option::is_none")]
         pub email: Option<String>,
         #[serde(default, skip_serializing_if = "Option::is_none")]
@@ -3635,7 +3635,7 @@ pub mod types {
             default,
             skip_serializing_if = "Option::is_none"
         )]
-        pub date_of_birth: Option<chrono::DateTime<chrono::offset::Utc>>,
+        pub date_of_birth: Option<chrono::NaiveDateTime>,
         #[serde(default, skip_serializing_if = "Option::is_none")]
         pub email: Option<String>,
         #[serde(default, skip_serializing_if = "Option::is_none")]
@@ -4945,7 +4945,7 @@ pub mod types {
         #[serde(default, skip_serializing_if = "Option::is_none")]
         pub payments: Option<Vec<ShipCompliantRestApiDomainsSalesOrderEntitiesPayment>>,
         #[serde(rename = "purchaseDate")]
-        pub purchase_date: chrono::DateTime<chrono::offset::Utc>,
+        pub purchase_date: chrono::NaiveDateTime,
         #[serde(
             rename = "salesOrderKey",
             default,
@@ -5073,7 +5073,7 @@ pub mod types {
             default,
             skip_serializing_if = "Option::is_none"
         )]
-        pub effective_date: Option<chrono::DateTime<chrono::offset::Utc>>,
+        pub effective_date: Option<chrono::NaiveDateTime>,
         #[serde(rename = "orderItems")]
         pub order_items: Vec<ShipCompliantRestApiDomainsSalesOrderEntitiesShipmentItemForTax>,
         #[serde(rename = "shipToAddress")]
@@ -5256,7 +5256,7 @@ pub mod types {
         #[serde(default, skip_serializing_if = "Option::is_none")]
         pub payments: Option<Vec<ShipCompliantRestApiDomainsSalesOrderEntitiesPayment>>,
         #[serde(rename = "purchaseDate")]
-        pub purchase_date: chrono::DateTime<chrono::offset::Utc>,
+        pub purchase_date: chrono::NaiveDateTime,
         #[serde(rename = "salesOrderKey")]
         pub sales_order_key: String,
         #[serde(
@@ -5525,7 +5525,7 @@ pub mod types {
             default,
             skip_serializing_if = "Option::is_none"
         )]
-        pub purchase_date: Option<chrono::DateTime<chrono::offset::Utc>>,
+        pub purchase_date: Option<chrono::NaiveDateTime>,
         #[serde(
             rename = "salesOrderKey",
             default,
@@ -5689,7 +5689,7 @@ pub mod types {
             default,
             skip_serializing_if = "Option::is_none"
         )]
-        pub effective_date: Option<chrono::DateTime<chrono::offset::Utc>>,
+        pub effective_date: Option<chrono::NaiveDateTime>,
         #[doc = "LicenseRelationship"]
         #[serde(
             rename = "licenseRelationship",
@@ -5888,7 +5888,7 @@ pub mod types {
         #[serde(default, skip_serializing_if = "Option::is_none")]
         pub packages: Option<Vec<ShipCompliantRestApiDomainsSalesOrderEntitiesPackage>>,
         #[serde(rename = "shipDate")]
-        pub ship_date: chrono::DateTime<chrono::offset::Utc>,
+        pub ship_date: chrono::NaiveDateTime,
         #[serde(rename = "shipTo")]
         pub ship_to: ShipCompliantRestApiDomainsSalesOrderEntitiesAddress,
         #[serde(rename = "shipmentItems")]
@@ -6373,7 +6373,7 @@ pub mod types {
         #[serde(default, skip_serializing_if = "Option::is_none")]
         pub packages: Option<Vec<ShipCompliantRestApiDomainsSalesOrderEntitiesPackageOutput>>,
         #[serde(rename = "shipDate", default, skip_serializing_if = "Option::is_none")]
-        pub ship_date: Option<chrono::DateTime<chrono::offset::Utc>>,
+        pub ship_date: Option<chrono::NaiveDateTime>,
         #[serde(rename = "shipTo", default, skip_serializing_if = "Option::is_none")]
         pub ship_to: Option<ShipCompliantRestApiDomainsSalesOrderEntitiesAddress>,
         #[serde(
@@ -7354,7 +7354,7 @@ pub mod types {
         )]
         pub tax_collected: Option<f64>,
         #[serde(rename = "transactionDate")]
-        pub transaction_date: chrono::DateTime<chrono::offset::Utc>,
+        pub transaction_date: chrono::NaiveDateTime,
     }
 
     impl From<&ShipCompliantRestApiDomainsWholesaleEntitiesOrder>
@@ -7492,7 +7492,7 @@ pub mod types {
         #[serde(default, skip_serializing_if = "Option::is_none")]
         pub freight: Option<f64>,
         #[serde(rename = "shipDate")]
-        pub ship_date: chrono::DateTime<chrono::offset::Utc>,
+        pub ship_date: chrono::NaiveDateTime,
         #[serde(rename = "shipmentItems")]
         pub shipment_items: Vec<ShipCompliantRestApiDomainsWholesaleEntitiesShipmentItem>,
         #[serde(
