@@ -10487,12 +10487,11 @@ pub mod types {
     #[doc = "      ]"]
     #[doc = "    }"]
     #[doc = "  },"]
-    #[doc = "  \"additionalProperties\": false"]
+    #[doc = "  \"additionalProperties\": true"]
     #[doc = "}"]
     #[doc = r" ```"]
     #[doc = r" </details>"]
     #[derive(:: serde :: Deserialize, :: serde :: Serialize, Clone, Debug)]
-    #[serde(deny_unknown_fields)]
     pub struct ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderAddressValidationResponseError
     {
         #[serde(default, skip_serializing_if = "Option::is_none")]
