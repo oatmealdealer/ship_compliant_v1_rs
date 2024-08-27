@@ -12719,6 +12719,51 @@ pub mod types {
     }
 
     #[derive(Debug, serde :: Serialize, serde :: Deserialize)]
+    #[serde(untagged)]
+    pub enum ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderNotFoundResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderAddressValidationResponseOrNone
+    {
+        ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderNotFoundResponse(
+            ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderNotFoundResponse,
+        ),
+        ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderAddressValidationResponse(
+            ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderAddressValidationResponse,
+        ),
+        None,
+    }
+
+    impl From < ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderNotFoundResponse > for ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderNotFoundResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderAddressValidationResponseOrNone { fn from (value : ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderNotFoundResponse) -> Self { ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderNotFoundResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderAddressValidationResponseOrNone :: ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderNotFoundResponse (value) } }
+    impl From < ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderAddressValidationResponse > for ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderNotFoundResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderAddressValidationResponseOrNone { fn from (value : ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderAddressValidationResponse) -> Self { ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderNotFoundResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderAddressValidationResponseOrNone :: ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderAddressValidationResponse (value) } }
+    impl From < () > for ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderNotFoundResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderAddressValidationResponseOrNone { fn from (_ : ()) -> Self { ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderNotFoundResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderAddressValidationResponseOrNone :: None } }
+    #[derive(Debug, serde :: Serialize, serde :: Deserialize)]
+    #[serde(untagged)]
+    pub enum ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderAddressValidationResponseOrNone
+    {
+        ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderAddressValidationResponse(
+            ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderAddressValidationResponse,
+        ),
+        None,
+    }
+
+    impl From < ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderAddressValidationResponse > for ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderAddressValidationResponseOrNone { fn from (value : ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderAddressValidationResponse) -> Self { ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderAddressValidationResponseOrNone :: ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderAddressValidationResponse (value) } }
+    impl From < () > for ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderAddressValidationResponseOrNone { fn from (_ : ()) -> Self { ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderAddressValidationResponseOrNone :: None } }
+    #[derive(Debug, serde :: Serialize, serde :: Deserialize)]
+    #[serde(untagged)]
+    pub enum ShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingNotFoundResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingBadRequestResponseOrNone
+    {
+        ShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingNotFoundResponse(
+            ShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingNotFoundResponse,
+        ),
+        ShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingBadRequestResponse(
+            ShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingBadRequestResponse,
+        ),
+        None,
+    }
+
+    impl From < ShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingNotFoundResponse > for ShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingNotFoundResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingBadRequestResponseOrNone { fn from (value : ShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingNotFoundResponse) -> Self { ShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingNotFoundResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingBadRequestResponseOrNone :: ShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingNotFoundResponse (value) } }
+    impl From < ShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingBadRequestResponse > for ShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingNotFoundResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingBadRequestResponseOrNone { fn from (value : ShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingBadRequestResponse) -> Self { ShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingNotFoundResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingBadRequestResponseOrNone :: ShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingBadRequestResponse (value) } }
+    impl From < () > for ShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingNotFoundResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingBadRequestResponseOrNone { fn from (_ : ()) -> Self { ShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingNotFoundResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingBadRequestResponseOrNone :: None } }
+    #[derive(Debug, serde :: Serialize, serde :: Deserialize)]
+    #[serde(untagged)]
     pub enum ShipCompliantRestApiMiddlewaresSwaggerResponseTypesHoldLocationBadRequestResponseOrNone {
         ShipCompliantRestApiMiddlewaresSwaggerResponseTypesHoldLocationBadRequestResponse(
             ShipCompliantRestApiMiddlewaresSwaggerResponseTypesHoldLocationBadRequestResponse,
@@ -12745,149 +12790,7 @@ pub mod types {
     }
 
     #[derive(Debug, serde :: Serialize, serde :: Deserialize)]
-    pub enum ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderNotFoundResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderBadRequestResponseOrNone
-    {
-        ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderNotFoundResponse(
-            ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderNotFoundResponse,
-        ),
-        ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderBadRequestResponse(
-            ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderBadRequestResponse,
-        ),
-        None,
-    }
-
-    impl From < ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderNotFoundResponse > for ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderNotFoundResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderBadRequestResponseOrNone { fn from (value : ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderNotFoundResponse) -> Self { ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderNotFoundResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderBadRequestResponseOrNone :: ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderNotFoundResponse (value) } }
-    impl From < ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderBadRequestResponse > for ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderNotFoundResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderBadRequestResponseOrNone { fn from (value : ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderBadRequestResponse) -> Self { ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderNotFoundResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderBadRequestResponseOrNone :: ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderBadRequestResponse (value) } }
-    impl From < () > for ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderNotFoundResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderBadRequestResponseOrNone { fn from (_ : ()) -> Self { ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderNotFoundResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderBadRequestResponseOrNone :: None } }
-    #[derive(Debug, serde :: Serialize, serde :: Deserialize)]
-    pub enum ShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingNotFoundResponseOrNone {
-        ShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingNotFoundResponse(
-            ShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingNotFoundResponse,
-        ),
-        None,
-    }
-
-    impl From<ShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingNotFoundResponse>
-        for ShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingNotFoundResponseOrNone
-    {
-        fn from(
-            value: ShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingNotFoundResponse,
-        ) -> Self {
-            ShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingNotFoundResponseOrNone :: ShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingNotFoundResponse (value)
-        }
-    }
-
-    impl From<()>
-        for ShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingNotFoundResponseOrNone
-    {
-        fn from(_: ()) -> Self {
-            ShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingNotFoundResponseOrNone::None
-        }
-    }
-
-    #[derive(Debug, serde :: Serialize, serde :: Deserialize)]
-    pub enum ShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingNotFoundResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingBadRequestResponseOrNone
-    {
-        ShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingNotFoundResponse(
-            ShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingNotFoundResponse,
-        ),
-        ShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingBadRequestResponse(
-            ShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingBadRequestResponse,
-        ),
-        None,
-    }
-
-    impl From < ShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingNotFoundResponse > for ShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingNotFoundResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingBadRequestResponseOrNone { fn from (value : ShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingNotFoundResponse) -> Self { ShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingNotFoundResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingBadRequestResponseOrNone :: ShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingNotFoundResponse (value) } }
-    impl From < ShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingBadRequestResponse > for ShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingNotFoundResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingBadRequestResponseOrNone { fn from (value : ShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingBadRequestResponse) -> Self { ShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingNotFoundResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingBadRequestResponseOrNone :: ShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingBadRequestResponse (value) } }
-    impl From < () > for ShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingNotFoundResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingBadRequestResponseOrNone { fn from (_ : ()) -> Self { ShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingNotFoundResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingBadRequestResponseOrNone :: None } }
-    #[derive(Debug, serde :: Serialize, serde :: Deserialize)]
-    pub enum ShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandNotFoundResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandBadRequestResponseOrNone
-    {
-        ShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandNotFoundResponse(
-            ShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandNotFoundResponse,
-        ),
-        ShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandBadRequestResponse(
-            ShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandBadRequestResponse,
-        ),
-        None,
-    }
-
-    impl From < ShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandNotFoundResponse > for ShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandNotFoundResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandBadRequestResponseOrNone { fn from (value : ShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandNotFoundResponse) -> Self { ShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandNotFoundResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandBadRequestResponseOrNone :: ShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandNotFoundResponse (value) } }
-    impl From < ShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandBadRequestResponse > for ShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandNotFoundResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandBadRequestResponseOrNone { fn from (value : ShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandBadRequestResponse) -> Self { ShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandNotFoundResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandBadRequestResponseOrNone :: ShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandBadRequestResponse (value) } }
-    impl From < () > for ShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandNotFoundResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandBadRequestResponseOrNone { fn from (_ : ()) -> Self { ShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandNotFoundResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandBadRequestResponseOrNone :: None } }
-    #[derive(Debug, serde :: Serialize, serde :: Deserialize)]
-    pub enum ShipCompliantRestApiMiddlewaresSwaggerResponseTypesProductBadRequestResponseOrNone {
-        ShipCompliantRestApiMiddlewaresSwaggerResponseTypesProductBadRequestResponse(
-            ShipCompliantRestApiMiddlewaresSwaggerResponseTypesProductBadRequestResponse,
-        ),
-        None,
-    }
-
-    impl From<ShipCompliantRestApiMiddlewaresSwaggerResponseTypesProductBadRequestResponse>
-        for ShipCompliantRestApiMiddlewaresSwaggerResponseTypesProductBadRequestResponseOrNone
-    {
-        fn from(
-            value: ShipCompliantRestApiMiddlewaresSwaggerResponseTypesProductBadRequestResponse,
-        ) -> Self {
-            ShipCompliantRestApiMiddlewaresSwaggerResponseTypesProductBadRequestResponseOrNone :: ShipCompliantRestApiMiddlewaresSwaggerResponseTypesProductBadRequestResponse (value)
-        }
-    }
-
-    impl From<()>
-        for ShipCompliantRestApiMiddlewaresSwaggerResponseTypesProductBadRequestResponseOrNone
-    {
-        fn from(_: ()) -> Self {
-            ShipCompliantRestApiMiddlewaresSwaggerResponseTypesProductBadRequestResponseOrNone::None
-        }
-    }
-
-    #[derive(Debug, serde :: Serialize, serde :: Deserialize)]
-    pub enum ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderAddressValidationResponseOrNone
-    {
-        ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderAddressValidationResponse(
-            ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderAddressValidationResponse,
-        ),
-        None,
-    }
-
-    impl From < ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderAddressValidationResponse > for ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderAddressValidationResponseOrNone { fn from (value : ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderAddressValidationResponse) -> Self { ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderAddressValidationResponseOrNone :: ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderAddressValidationResponse (value) } }
-    impl From < () > for ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderAddressValidationResponseOrNone { fn from (_ : ()) -> Self { ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderAddressValidationResponseOrNone :: None } }
-    #[derive(Debug, serde :: Serialize, serde :: Deserialize)]
-    pub enum ShipCompliantRestApiMiddlewaresSwaggerResponseTypesValidateAddressBadRequestResponseOrNone
-    {
-        ShipCompliantRestApiMiddlewaresSwaggerResponseTypesValidateAddressBadRequestResponse(
-            ShipCompliantRestApiMiddlewaresSwaggerResponseTypesValidateAddressBadRequestResponse,
-        ),
-        None,
-    }
-
-    impl From < ShipCompliantRestApiMiddlewaresSwaggerResponseTypesValidateAddressBadRequestResponse > for ShipCompliantRestApiMiddlewaresSwaggerResponseTypesValidateAddressBadRequestResponseOrNone { fn from (value : ShipCompliantRestApiMiddlewaresSwaggerResponseTypesValidateAddressBadRequestResponse) -> Self { ShipCompliantRestApiMiddlewaresSwaggerResponseTypesValidateAddressBadRequestResponseOrNone :: ShipCompliantRestApiMiddlewaresSwaggerResponseTypesValidateAddressBadRequestResponse (value) } }
-    impl From < () > for ShipCompliantRestApiMiddlewaresSwaggerResponseTypesValidateAddressBadRequestResponseOrNone { fn from (_ : ()) -> Self { ShipCompliantRestApiMiddlewaresSwaggerResponseTypesValidateAddressBadRequestResponseOrNone :: None } }
-    #[derive(Debug, serde :: Serialize, serde :: Deserialize)]
-    pub enum ShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandNotFoundResponseOrNone {
-        ShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandNotFoundResponse(
-            ShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandNotFoundResponse,
-        ),
-        None,
-    }
-
-    impl From<ShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandNotFoundResponse>
-        for ShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandNotFoundResponseOrNone
-    {
-        fn from(
-            value: ShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandNotFoundResponse,
-        ) -> Self {
-            ShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandNotFoundResponseOrNone :: ShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandNotFoundResponse (value)
-        }
-    }
-
-    impl From<()> for ShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandNotFoundResponseOrNone {
-        fn from(_: ()) -> Self {
-            ShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandNotFoundResponseOrNone::None
-        }
-    }
-
-    #[derive(Debug, serde :: Serialize, serde :: Deserialize)]
+    #[serde(untagged)]
     pub enum ShipCompliantRestApiMiddlewaresSwaggerResponseTypesProductBadRequestResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesProductNotFoundResponseOrNone
     {
         ShipCompliantRestApiMiddlewaresSwaggerResponseTypesProductBadRequestResponse(
@@ -12903,6 +12806,51 @@ pub mod types {
     impl From < ShipCompliantRestApiMiddlewaresSwaggerResponseTypesProductNotFoundResponse > for ShipCompliantRestApiMiddlewaresSwaggerResponseTypesProductBadRequestResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesProductNotFoundResponseOrNone { fn from (value : ShipCompliantRestApiMiddlewaresSwaggerResponseTypesProductNotFoundResponse) -> Self { ShipCompliantRestApiMiddlewaresSwaggerResponseTypesProductBadRequestResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesProductNotFoundResponseOrNone :: ShipCompliantRestApiMiddlewaresSwaggerResponseTypesProductNotFoundResponse (value) } }
     impl From < () > for ShipCompliantRestApiMiddlewaresSwaggerResponseTypesProductBadRequestResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesProductNotFoundResponseOrNone { fn from (_ : ()) -> Self { ShipCompliantRestApiMiddlewaresSwaggerResponseTypesProductBadRequestResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesProductNotFoundResponseOrNone :: None } }
     #[derive(Debug, serde :: Serialize, serde :: Deserialize)]
+    #[serde(untagged)]
+    pub enum ShipCompliantRestApiMiddlewaresSwaggerResponseTypesValidateAddressBadRequestResponseOrNone
+    {
+        ShipCompliantRestApiMiddlewaresSwaggerResponseTypesValidateAddressBadRequestResponse(
+            ShipCompliantRestApiMiddlewaresSwaggerResponseTypesValidateAddressBadRequestResponse,
+        ),
+        None,
+    }
+
+    impl From < ShipCompliantRestApiMiddlewaresSwaggerResponseTypesValidateAddressBadRequestResponse > for ShipCompliantRestApiMiddlewaresSwaggerResponseTypesValidateAddressBadRequestResponseOrNone { fn from (value : ShipCompliantRestApiMiddlewaresSwaggerResponseTypesValidateAddressBadRequestResponse) -> Self { ShipCompliantRestApiMiddlewaresSwaggerResponseTypesValidateAddressBadRequestResponseOrNone :: ShipCompliantRestApiMiddlewaresSwaggerResponseTypesValidateAddressBadRequestResponse (value) } }
+    impl From < () > for ShipCompliantRestApiMiddlewaresSwaggerResponseTypesValidateAddressBadRequestResponseOrNone { fn from (_ : ()) -> Self { ShipCompliantRestApiMiddlewaresSwaggerResponseTypesValidateAddressBadRequestResponseOrNone :: None } }
+    #[derive(Debug, serde :: Serialize, serde :: Deserialize)]
+    #[serde(untagged)]
+    pub enum ShipCompliantRestApiMiddlewaresSwaggerResponseTypesHoldLocationBadRequestResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesHoldLocationNotFoundResponseOrNone
+    {
+        ShipCompliantRestApiMiddlewaresSwaggerResponseTypesHoldLocationBadRequestResponse(
+            ShipCompliantRestApiMiddlewaresSwaggerResponseTypesHoldLocationBadRequestResponse,
+        ),
+        ShipCompliantRestApiMiddlewaresSwaggerResponseTypesHoldLocationNotFoundResponse(
+            ShipCompliantRestApiMiddlewaresSwaggerResponseTypesHoldLocationNotFoundResponse,
+        ),
+        None,
+    }
+
+    impl From < ShipCompliantRestApiMiddlewaresSwaggerResponseTypesHoldLocationBadRequestResponse > for ShipCompliantRestApiMiddlewaresSwaggerResponseTypesHoldLocationBadRequestResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesHoldLocationNotFoundResponseOrNone { fn from (value : ShipCompliantRestApiMiddlewaresSwaggerResponseTypesHoldLocationBadRequestResponse) -> Self { ShipCompliantRestApiMiddlewaresSwaggerResponseTypesHoldLocationBadRequestResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesHoldLocationNotFoundResponseOrNone :: ShipCompliantRestApiMiddlewaresSwaggerResponseTypesHoldLocationBadRequestResponse (value) } }
+    impl From < ShipCompliantRestApiMiddlewaresSwaggerResponseTypesHoldLocationNotFoundResponse > for ShipCompliantRestApiMiddlewaresSwaggerResponseTypesHoldLocationBadRequestResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesHoldLocationNotFoundResponseOrNone { fn from (value : ShipCompliantRestApiMiddlewaresSwaggerResponseTypesHoldLocationNotFoundResponse) -> Self { ShipCompliantRestApiMiddlewaresSwaggerResponseTypesHoldLocationBadRequestResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesHoldLocationNotFoundResponseOrNone :: ShipCompliantRestApiMiddlewaresSwaggerResponseTypesHoldLocationNotFoundResponse (value) } }
+    impl From < () > for ShipCompliantRestApiMiddlewaresSwaggerResponseTypesHoldLocationBadRequestResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesHoldLocationNotFoundResponseOrNone { fn from (_ : ()) -> Self { ShipCompliantRestApiMiddlewaresSwaggerResponseTypesHoldLocationBadRequestResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesHoldLocationNotFoundResponseOrNone :: None } }
+    #[derive(Debug, serde :: Serialize, serde :: Deserialize)]
+    #[serde(untagged)]
+    pub enum ShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandNotFoundResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandBadRequestResponseOrNone
+    {
+        ShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandNotFoundResponse(
+            ShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandNotFoundResponse,
+        ),
+        ShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandBadRequestResponse(
+            ShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandBadRequestResponse,
+        ),
+        None,
+    }
+
+    impl From < ShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandNotFoundResponse > for ShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandNotFoundResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandBadRequestResponseOrNone { fn from (value : ShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandNotFoundResponse) -> Self { ShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandNotFoundResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandBadRequestResponseOrNone :: ShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandNotFoundResponse (value) } }
+    impl From < ShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandBadRequestResponse > for ShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandNotFoundResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandBadRequestResponseOrNone { fn from (value : ShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandBadRequestResponse) -> Self { ShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandNotFoundResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandBadRequestResponseOrNone :: ShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandBadRequestResponse (value) } }
+    impl From < () > for ShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandNotFoundResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandBadRequestResponseOrNone { fn from (_ : ()) -> Self { ShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandNotFoundResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandBadRequestResponseOrNone :: None } }
+    #[derive(Debug, serde :: Serialize, serde :: Deserialize)]
+    #[serde(untagged)]
     pub enum ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderNotFoundResponseOrNone {
         ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderNotFoundResponse(
             ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderNotFoundResponse,
@@ -12929,35 +12877,99 @@ pub mod types {
     }
 
     #[derive(Debug, serde :: Serialize, serde :: Deserialize)]
-    pub enum ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderNotFoundResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderAddressValidationResponseOrNone
+    #[serde(untagged)]
+    pub enum ShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingNotFoundResponseOrNone {
+        ShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingNotFoundResponse(
+            ShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingNotFoundResponse,
+        ),
+        None,
+    }
+
+    impl From<ShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingNotFoundResponse>
+        for ShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingNotFoundResponseOrNone
+    {
+        fn from(
+            value: ShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingNotFoundResponse,
+        ) -> Self {
+            ShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingNotFoundResponseOrNone :: ShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingNotFoundResponse (value)
+        }
+    }
+
+    impl From<()>
+        for ShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingNotFoundResponseOrNone
+    {
+        fn from(_: ()) -> Self {
+            ShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingNotFoundResponseOrNone::None
+        }
+    }
+
+    #[derive(Debug, serde :: Serialize, serde :: Deserialize)]
+    #[serde(untagged)]
+    pub enum ShipCompliantRestApiMiddlewaresSwaggerResponseTypesProductBadRequestResponseOrNone {
+        ShipCompliantRestApiMiddlewaresSwaggerResponseTypesProductBadRequestResponse(
+            ShipCompliantRestApiMiddlewaresSwaggerResponseTypesProductBadRequestResponse,
+        ),
+        None,
+    }
+
+    impl From<ShipCompliantRestApiMiddlewaresSwaggerResponseTypesProductBadRequestResponse>
+        for ShipCompliantRestApiMiddlewaresSwaggerResponseTypesProductBadRequestResponseOrNone
+    {
+        fn from(
+            value: ShipCompliantRestApiMiddlewaresSwaggerResponseTypesProductBadRequestResponse,
+        ) -> Self {
+            ShipCompliantRestApiMiddlewaresSwaggerResponseTypesProductBadRequestResponseOrNone :: ShipCompliantRestApiMiddlewaresSwaggerResponseTypesProductBadRequestResponse (value)
+        }
+    }
+
+    impl From<()>
+        for ShipCompliantRestApiMiddlewaresSwaggerResponseTypesProductBadRequestResponseOrNone
+    {
+        fn from(_: ()) -> Self {
+            ShipCompliantRestApiMiddlewaresSwaggerResponseTypesProductBadRequestResponseOrNone::None
+        }
+    }
+
+    #[derive(Debug, serde :: Serialize, serde :: Deserialize)]
+    #[serde(untagged)]
+    pub enum ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderNotFoundResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderBadRequestResponseOrNone
     {
         ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderNotFoundResponse(
             ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderNotFoundResponse,
         ),
-        ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderAddressValidationResponse(
-            ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderAddressValidationResponse,
+        ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderBadRequestResponse(
+            ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderBadRequestResponse,
         ),
         None,
     }
 
-    impl From < ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderNotFoundResponse > for ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderNotFoundResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderAddressValidationResponseOrNone { fn from (value : ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderNotFoundResponse) -> Self { ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderNotFoundResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderAddressValidationResponseOrNone :: ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderNotFoundResponse (value) } }
-    impl From < ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderAddressValidationResponse > for ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderNotFoundResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderAddressValidationResponseOrNone { fn from (value : ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderAddressValidationResponse) -> Self { ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderNotFoundResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderAddressValidationResponseOrNone :: ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderAddressValidationResponse (value) } }
-    impl From < () > for ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderNotFoundResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderAddressValidationResponseOrNone { fn from (_ : ()) -> Self { ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderNotFoundResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderAddressValidationResponseOrNone :: None } }
+    impl From < ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderNotFoundResponse > for ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderNotFoundResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderBadRequestResponseOrNone { fn from (value : ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderNotFoundResponse) -> Self { ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderNotFoundResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderBadRequestResponseOrNone :: ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderNotFoundResponse (value) } }
+    impl From < ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderBadRequestResponse > for ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderNotFoundResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderBadRequestResponseOrNone { fn from (value : ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderBadRequestResponse) -> Self { ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderNotFoundResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderBadRequestResponseOrNone :: ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderBadRequestResponse (value) } }
+    impl From < () > for ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderNotFoundResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderBadRequestResponseOrNone { fn from (_ : ()) -> Self { ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderNotFoundResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderBadRequestResponseOrNone :: None } }
     #[derive(Debug, serde :: Serialize, serde :: Deserialize)]
-    pub enum ShipCompliantRestApiMiddlewaresSwaggerResponseTypesHoldLocationBadRequestResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesHoldLocationNotFoundResponseOrNone
-    {
-        ShipCompliantRestApiMiddlewaresSwaggerResponseTypesHoldLocationBadRequestResponse(
-            ShipCompliantRestApiMiddlewaresSwaggerResponseTypesHoldLocationBadRequestResponse,
-        ),
-        ShipCompliantRestApiMiddlewaresSwaggerResponseTypesHoldLocationNotFoundResponse(
-            ShipCompliantRestApiMiddlewaresSwaggerResponseTypesHoldLocationNotFoundResponse,
+    #[serde(untagged)]
+    pub enum ShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandNotFoundResponseOrNone {
+        ShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandNotFoundResponse(
+            ShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandNotFoundResponse,
         ),
         None,
     }
 
-    impl From < ShipCompliantRestApiMiddlewaresSwaggerResponseTypesHoldLocationBadRequestResponse > for ShipCompliantRestApiMiddlewaresSwaggerResponseTypesHoldLocationBadRequestResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesHoldLocationNotFoundResponseOrNone { fn from (value : ShipCompliantRestApiMiddlewaresSwaggerResponseTypesHoldLocationBadRequestResponse) -> Self { ShipCompliantRestApiMiddlewaresSwaggerResponseTypesHoldLocationBadRequestResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesHoldLocationNotFoundResponseOrNone :: ShipCompliantRestApiMiddlewaresSwaggerResponseTypesHoldLocationBadRequestResponse (value) } }
-    impl From < ShipCompliantRestApiMiddlewaresSwaggerResponseTypesHoldLocationNotFoundResponse > for ShipCompliantRestApiMiddlewaresSwaggerResponseTypesHoldLocationBadRequestResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesHoldLocationNotFoundResponseOrNone { fn from (value : ShipCompliantRestApiMiddlewaresSwaggerResponseTypesHoldLocationNotFoundResponse) -> Self { ShipCompliantRestApiMiddlewaresSwaggerResponseTypesHoldLocationBadRequestResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesHoldLocationNotFoundResponseOrNone :: ShipCompliantRestApiMiddlewaresSwaggerResponseTypesHoldLocationNotFoundResponse (value) } }
-    impl From < () > for ShipCompliantRestApiMiddlewaresSwaggerResponseTypesHoldLocationBadRequestResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesHoldLocationNotFoundResponseOrNone { fn from (_ : ()) -> Self { ShipCompliantRestApiMiddlewaresSwaggerResponseTypesHoldLocationBadRequestResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesHoldLocationNotFoundResponseOrNone :: None } }
+    impl From<ShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandNotFoundResponse>
+        for ShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandNotFoundResponseOrNone
+    {
+        fn from(
+            value: ShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandNotFoundResponse,
+        ) -> Self {
+            ShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandNotFoundResponseOrNone :: ShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandNotFoundResponse (value)
+        }
+    }
+
+    impl From<()> for ShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandNotFoundResponseOrNone {
+        fn from(_: ()) -> Self {
+            ShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandNotFoundResponseOrNone::None
+        }
+    }
 }
 
 #[derive(Clone, Debug)]
@@ -13020,8 +13032,7 @@ impl Client {
 
 #[allow(clippy::all)]
 impl Client {
-    #[doc = "Validates the provided address\n\nSample request:\r\n            \r\n    POST /api/v1/addresses/validate\r\n    {\r\n        \"Address\": {\r\n            \"City\": \"Boulder\",\r\n            \"Company\": \"Sovos\",\r\n            \"Country\": \"US\",\r\n            \"County\": \"Boulder\",\r\n            \"DateOfBirth\": \"1970-01-01T00:00:00Z\",\r\n            \"Email\": \"example@sovos.com\",\r\n            \"Fax\": \"555-555-5555\",\r\n            \"FirstName\": \"Test First Name\",\r\n            \"LastName\": \"Test Last Name\",\r\n            \"Phone\": \"555-555-5555\",\r\n            \"State\": \"CO\",\r\n            \"Street1\": \"2465 Central Ave\",\r\n            \"Street2\": \"Ste 110\",\r\n            \"Zip1\": \"80301\",\r\n            \"Zip2\": \"5728\"\r\n         }\r\n    }\n\nSends a `POST` request to `/api/v1/addresses/validate`\n\nArguments:\n- `body`: The request body with the address to be validated\n"]
-    pub async fn post_addresses_validate < 'a > (& 'a self , body : & 'a types :: ShipCompliantRestApiDomainsAddressesEntitiesAddressBase) -> Result < ResponseValue < types :: ShipCompliantRestApiMiddlewaresSwaggerResponseTypesValidateAddressResponse > , Error < types :: ShipCompliantRestApiMiddlewaresSwaggerResponseTypesValidateAddressBadRequestResponseOrNone > , >{
+    #[doc = "Validates the provided address\n\nSample request:\r\n            \r\n    POST /api/v1/addresses/validate\r\n    {\r\n        \"Address\": {\r\n            \"City\": \"Boulder\",\r\n            \"Company\": \"Sovos\",\r\n            \"Country\": \"US\",\r\n            \"County\": \"Boulder\",\r\n            \"DateOfBirth\": \"1970-01-01T00:00:00Z\",\r\n            \"Email\": \"example@sovos.com\",\r\n            \"Fax\": \"555-555-5555\",\r\n            \"FirstName\": \"Test First Name\",\r\n            \"LastName\": \"Test Last Name\",\r\n            \"Phone\": \"555-555-5555\",\r\n            \"State\": \"CO\",\r\n            \"Street1\": \"2465 Central Ave\",\r\n            \"Street2\": \"Ste 110\",\r\n            \"Zip1\": \"80301\",\r\n            \"Zip2\": \"5728\"\r\n         }\r\n    }\n\nSends a `POST` request to `/api/v1/addresses/validate`\n\nArguments:\n- `body`: The request body with the address to be validated\n"]    pub async fn post_addresses_validate < 'a > (& 'a self , body : & 'a types :: ShipCompliantRestApiDomainsAddressesEntitiesAddressBase) -> Result < ResponseValue < types :: ShipCompliantRestApiMiddlewaresSwaggerResponseTypesValidateAddressResponse > , Error < types :: ShipCompliantRestApiMiddlewaresSwaggerResponseTypesValidateAddressBadRequestResponseOrNone > , >{
         let url = format!("{}/api/v1/addresses/validate", self.baseurl,);
         #[allow(unused_mut)]
         let mut request = self
@@ -13040,7 +13051,9 @@ impl Client {
             400u16 => Err(Error::ErrorResponse(
                 ResponseValue::from_response(response).await?,
             )),
-            401u16 => Err(Error::ErrorResponse(ResponseValue::from_response(response).await?)),
+            401u16 => Err(Error::ErrorResponse(
+                ResponseValue::from_response(response).await?,
+            )),
             _ => Err(Error::UnexpectedResponse(response)),
         }
     }
@@ -13048,7 +13061,7 @@ impl Client {
     #[doc = "Retrieves brand information\n\nSample request:\r\n            \r\n    GET /api/v1/brands/BRAND123\n\nSends a `GET` request to `/api/v1/brands/{brandKey}`\n\nArguments:\n- `brand_key`: The brand key\n"]
     pub async fn get_brands_brand_key<'a>(
         &'a self,
-        brand_key: Option<&'a str>,
+        brand_key: &'a str,
     ) -> Result<
         ResponseValue<
             types::ShipCompliantRestApiMiddlewaresSwaggerResponseTypesGetBrandSuccessResponse,
@@ -13060,7 +13073,7 @@ impl Client {
         let url = format!(
             "{}/api/v1/brands/{}",
             self.baseurl,
-            encode_path(&brand_key.unwrap().to_string()),
+            encode_path(&brand_key.to_string()),
         );
         #[allow(unused_mut)]
         let mut request = self
@@ -13075,7 +13088,9 @@ impl Client {
         let response = result?;
         match response.status().as_u16() {
             200u16 => ResponseValue::from_response(response).await,
-            401u16 => Err(Error::ErrorResponse(ResponseValue::from_response(response).await?)),
+            401u16 => Err(Error::ErrorResponse(
+                ResponseValue::from_response(response).await?,
+            )),
             404u16 => Err(Error::ErrorResponse(
                 ResponseValue::from_response(response).await?,
             )),
@@ -13083,11 +13098,11 @@ impl Client {
         }
     }
 
-    #[doc = "Updates an existing brand\n\nSample request:\r\n            \r\n    PUT /api/v1/brands/BRAND123\r\n    {\r\n      \"Key\": \"BRAND123\",\r\n      \"TTBBrandKey\": \"TTBBrandKey\",\r\n      \"Name\": \"Example Brand\",\r\n      \"Owner\": {\r\n        \"City\": \"Boulder\",\r\n        \"Country\": \"US\",\r\n        \"Name\": \"Example Owner\",\r\n        \"State\": \"CO\",\r\n        \"Street1\": \"2465 Central Ave\",\r\n        \"Street2\": \"Ste 110\",\r\n        \"Zip\": \"80301\"\r\n      },\r\n      \"ThisBrandIsBottledByAThirdParty\": true,\r\n      \"ThisBrandIsProducedByAThirdParty\": true,\r\n      \"ThisBrandOperatesUnderATradeName\": true,\r\n      \"ThisBrandWasAcquiredFromAThirdParty\": false\r\n    }\n\nSends a `PUT` request to `/api/v1/brands/{brandKey}`\n\nArguments:\n- `brand_key`: The brand key\n- `body`: The new Brand data\n"]    pub async fn put_brands_brand_key < 'a > (& 'a self , brand_key : Option < & 'a str > , body : & 'a types :: ShipCompliantRestApiDomainsBrandEntitiesBrand) -> Result < ResponseValue < types :: ShipCompliantRestApiMiddlewaresSwaggerResponseTypesPutBrandResponse > , Error < types :: ShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandNotFoundResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandBadRequestResponseOrNone > , >{
+    #[doc = "Updates an existing brand\n\nSample request:\r\n            \r\n    PUT /api/v1/brands/BRAND123\r\n    {\r\n      \"Key\": \"BRAND123\",\r\n      \"TTBBrandKey\": \"TTBBrandKey\",\r\n      \"Name\": \"Example Brand\",\r\n      \"Owner\": {\r\n        \"City\": \"Boulder\",\r\n        \"Country\": \"US\",\r\n        \"Name\": \"Example Owner\",\r\n        \"State\": \"CO\",\r\n        \"Street1\": \"2465 Central Ave\",\r\n        \"Street2\": \"Ste 110\",\r\n        \"Zip\": \"80301\"\r\n      },\r\n      \"ThisBrandIsBottledByAThirdParty\": true,\r\n      \"ThisBrandIsProducedByAThirdParty\": true,\r\n      \"ThisBrandOperatesUnderATradeName\": true,\r\n      \"ThisBrandWasAcquiredFromAThirdParty\": false\r\n    }\n\nSends a `PUT` request to `/api/v1/brands/{brandKey}`\n\nArguments:\n- `brand_key`: The brand key\n- `body`: The new Brand data\n"]    pub async fn put_brands_brand_key < 'a > (& 'a self , brand_key : & 'a str , body : & 'a types :: ShipCompliantRestApiDomainsBrandEntitiesBrand) -> Result < ResponseValue < types :: ShipCompliantRestApiMiddlewaresSwaggerResponseTypesPutBrandResponse > , Error < types :: ShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandNotFoundResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandBadRequestResponseOrNone > , >{
         let url = format!(
             "{}/api/v1/brands/{}",
             self.baseurl,
-            encode_path(&brand_key.unwrap().to_string()),
+            encode_path(&brand_key.to_string()),
         );
         #[allow(unused_mut)]
         let mut request = self
@@ -13106,7 +13121,9 @@ impl Client {
             400u16 => Err(Error::ErrorResponse(
                 ResponseValue::from_response(response).await?,
             )),
-            401u16 => Err(Error::ErrorResponse(ResponseValue::from_response(response).await?)),
+            401u16 => Err(Error::ErrorResponse(
+                ResponseValue::from_response(response).await?,
+            )),
             404u16 => Err(Error::ErrorResponse(
                 ResponseValue::from_response(response).await?,
             )),
@@ -13133,7 +13150,9 @@ impl Client {
             400u16 => Err(Error::ErrorResponse(
                 ResponseValue::from_response(response).await?,
             )),
-            401u16 => Err(Error::ErrorResponse(ResponseValue::from_response(response).await?)),
+            401u16 => Err(Error::ErrorResponse(
+                ResponseValue::from_response(response).await?,
+            )),
             404u16 => Err(Error::ErrorResponse(
                 ResponseValue::from_response(response).await?,
             )),
@@ -13141,37 +13160,22 @@ impl Client {
         }
     }
 
-    #[doc = "Gets hold locations for an address within a specified radius\n\nSample request:\r\n            \r\n\tGET /api/v1/holdLocations/FedEx?zipCode=80301&streetAddress=2465+Central+Ave&city=Boulder&stateOrProvince=CO&searchRadius=150&countryCode=US\n\nSends a `GET` request to `/api/v1/holdLocations/{carrier}`\n\nArguments:\n- `carrier`: Either \"FedEx\" or \"UPS\"\n- `city`: Required param for city name\n- `country_code`: Required two digit country code\n- `search_radius`: Optional parameter that indicates mile radius for search. Defaults to 10\n- `state_or_province`: Required two digit state code\n- `street_address`: Required param to add precision to the search\n- `zip_code`: Required query parameter representing postal code\n"]    pub async fn get_hold_locations_carrier < 'a > (& 'a self , carrier : Option < & 'a str > , city : Option < & 'a str > , country_code : Option < & 'a str > , search_radius : Option < i32 > , state_or_province : Option < & 'a str > , street_address : Option < & 'a str > , zip_code : Option < & 'a str >) -> Result < ResponseValue < types :: ShipCompliantRestApiMiddlewaresSwaggerResponseTypesGetHoldLocationResponse > , Error < types :: ShipCompliantRestApiMiddlewaresSwaggerResponseTypesHoldLocationBadRequestResponseOrNone > , >{
+    #[doc = "Gets hold locations for an address within a specified radius\n\nSample request:\r\n            \r\n\tGET /api/v1/holdLocations/FedEx?zipCode=80301&streetAddress=2465+Central+Ave&city=Boulder&stateOrProvince=CO&searchRadius=150&countryCode=US\n\nSends a `GET` request to `/api/v1/holdLocations/{carrier}`\n\nArguments:\n- `carrier`: Either \"FedEx\" or \"UPS\"\n- `city`: Required param for city name\n- `country_code`: Required two digit country code\n- `search_radius`: Optional parameter that indicates mile radius for search. Defaults to 10\n- `state_or_province`: Required two digit state code\n- `street_address`: Required param to add precision to the search\n- `zip_code`: Required query parameter representing postal code\n"]    pub async fn get_hold_locations_carrier < 'a > (& 'a self , carrier : & 'a str , city : & 'a str , country_code : & 'a str , search_radius : Option < i32 > , state_or_province : & 'a str , street_address : & 'a str , zip_code : & 'a str) -> Result < ResponseValue < types :: ShipCompliantRestApiMiddlewaresSwaggerResponseTypesGetHoldLocationResponse > , Error < types :: ShipCompliantRestApiMiddlewaresSwaggerResponseTypesHoldLocationBadRequestResponseOrNone > , >{
         let url = format!(
             "{}/api/v1/holdLocations/{}",
             self.baseurl,
-            encode_path(&carrier.unwrap().to_string()),
+            encode_path(&carrier.to_string()),
         );
         let mut query = Vec::with_capacity(6usize);
-        if let Some(v) = &city {
-            query.push(("city", v.to_string()));
-        }
-
-        if let Some(v) = &country_code {
-            query.push(("countryCode", v.to_string()));
-        }
-
+        query.push(("city", city.to_string()));
+        query.push(("countryCode", country_code.to_string()));
         if let Some(v) = &search_radius {
             query.push(("searchRadius", v.to_string()));
         }
 
-        if let Some(v) = &state_or_province {
-            query.push(("stateOrProvince", v.to_string()));
-        }
-
-        if let Some(v) = &street_address {
-            query.push(("streetAddress", v.to_string()));
-        }
-
-        if let Some(v) = &zip_code {
-            query.push(("zipCode", v.to_string()));
-        }
-
+        query.push(("stateOrProvince", state_or_province.to_string()));
+        query.push(("streetAddress", street_address.to_string()));
+        query.push(("zipCode", zip_code.to_string()));
         #[allow(unused_mut)]
         let mut request = self
             .client
@@ -13189,17 +13193,21 @@ impl Client {
             400u16 => Err(Error::ErrorResponse(
                 ResponseValue::from_response(response).await?,
             )),
-            401u16 => Err(Error::ErrorResponse(ResponseValue::from_response(response).await?)),
-            500u16 => Err(Error::ErrorResponse(ResponseValue::from_response(response).await?)),
+            401u16 => Err(Error::ErrorResponse(
+                ResponseValue::from_response(response).await?,
+            )),
+            500u16 => Err(Error::ErrorResponse(
+                ResponseValue::from_response(response).await?,
+            )),
             _ => Err(Error::UnexpectedResponse(response)),
         }
     }
 
-    #[doc = "Retrieves a specific Product by Product Key and Brand Key (optional)\n\nSample request:\r\n            \r\n    GET /api/v1/products/PROD123\r\n            \r\n If more than one brand contains the same product key:\r\n\r\n    GET /api/v1/products/PROD123?brandKey=BRAND123\n\nSends a `GET` request to `/api/v1/products/{productKey}`\n\nArguments:\n- `product_key`: The product number\n- `brand_key`: The brand key\n"]    pub async fn get_products_product_key < 'a > (& 'a self , product_key : Option < & 'a str > , brand_key : Option < & 'a str >) -> Result < ResponseValue < types :: ShipCompliantRestApiMiddlewaresSwaggerResponseTypesGetProductSuccessResponse > , Error < types :: ShipCompliantRestApiMiddlewaresSwaggerResponseTypesProductBadRequestResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesProductNotFoundResponseOrNone > , >{
+    #[doc = "Retrieves a specific Product by Product Key and Brand Key (optional)\n\nSample request:\r\n            \r\n    GET /api/v1/products/PROD123\r\n            \r\n If more than one brand contains the same product key:\r\n\r\n    GET /api/v1/products/PROD123?brandKey=BRAND123\n\nSends a `GET` request to `/api/v1/products/{productKey}`\n\nArguments:\n- `product_key`: The product number\n- `brand_key`: The brand key\n"]    pub async fn get_products_product_key < 'a > (& 'a self , product_key : & 'a str , brand_key : Option < & 'a str >) -> Result < ResponseValue < types :: ShipCompliantRestApiMiddlewaresSwaggerResponseTypesGetProductSuccessResponse > , Error < types :: ShipCompliantRestApiMiddlewaresSwaggerResponseTypesProductBadRequestResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesProductNotFoundResponseOrNone > , >{
         let url = format!(
             "{}/api/v1/products/{}",
             self.baseurl,
-            encode_path(&product_key.unwrap().to_string()),
+            encode_path(&product_key.to_string()),
         );
         let mut query = Vec::with_capacity(1usize);
         if let Some(v) = &brand_key {
@@ -13223,7 +13231,9 @@ impl Client {
             400u16 => Err(Error::ErrorResponse(
                 ResponseValue::from_response(response).await?,
             )),
-            401u16 => Err(Error::ErrorResponse(ResponseValue::from_response(response).await?)),
+            401u16 => Err(Error::ErrorResponse(
+                ResponseValue::from_response(response).await?,
+            )),
             404u16 => Err(Error::ErrorResponse(
                 ResponseValue::from_response(response).await?,
             )),
@@ -13231,11 +13241,11 @@ impl Client {
         }
     }
 
-    #[doc = "Updates an existing product\n\n Sample request:\r\n\r\n     PUT /api/v1/products/PROD123\r\n     {\r\n\t\t\t\"Age\": 2010,\r\n\t    \t\"BottleSizeML\": 700,\r\n\t    \t\"BrandKey\": \"BRAND123\",\r\n\t    \t\"DefaultCase\": \"12\",\r\n\t    \t\"DefaultRetailUnitPrice\": 10.00,\r\n\t    \t\"DefaultWholesaleCasePrice\": 100.00,\r\n\t    \t\"Description\": \"Example Product\",\r\n\t    \t\"Flavor\": \"Merlot\",\r\n\t    \t\"Style\": \"Merlot\",\r\n\t    \t\"GTIN\": \"012345678905\",\r\n\t    \t\"Label\": \"Example Label\",\r\n\t    \t\"NABCA\": \"01234567891\",\r\n\t    \t\"PercentAlcohol\": 6.8,\r\n\t    \t\"ProductDistribution\": \"Both\",\r\n\t    \t\"ProductType\": \"Wine\",\r\n\t    \t\"SCC\": \"10012345678902\",\r\n\t    \t\"UNIMERC\": \"012345\",\r\n\t    \t\"UnitPrice\": 10.00,\r\n\t    \t\"UPC\": \"012345678905\",\r\n\t    \t\"Varietal\": \"Merlot\",\r\n\t    \t\"Vintage\": 2010,\r\n\t    \t\"VolumeAmount\": 700.00,\r\n\t    \t\"VolumeUnit\": \"Milliliter\",\r\n\t    \t\"SubBrand\": \"Example Sub Brand\",\r\n\t    \t\"ContainerType\": \"Bottle\",\r\n\t    \t\"ContainersPerSellingUnit\": 1,\r\n\t    \t\"ShippingWeightInLbs\": 1.2\r\n     }\n\nSends a `PUT` request to `/api/v1/products/{productKey}`\n\nArguments:\n- `product_key`: The Product key\n- `brand_key`: The Brand Key (optional)\n- `body`: The new Product data\n"]    pub async fn put_products_product_key < 'a > (& 'a self , product_key : Option < & 'a str > , brand_key : Option < & 'a str > , body : & 'a types :: ShipCompliantRestApiDomainsProductEntitiesProductInput) -> Result < ResponseValue < types :: ShipCompliantRestApiMiddlewaresSwaggerResponseTypesPutProductResponse > , Error < types :: ShipCompliantRestApiMiddlewaresSwaggerResponseTypesProductBadRequestResponseOrNone > , >{
+    #[doc = "Updates an existing product\n\n Sample request:\r\n\r\n     PUT /api/v1/products/PROD123\r\n     {\r\n\t\t\t\"Age\": 2010,\r\n\t    \t\"BottleSizeML\": 700,\r\n\t    \t\"BrandKey\": \"BRAND123\",\r\n\t    \t\"DefaultCase\": \"12\",\r\n\t    \t\"DefaultRetailUnitPrice\": 10.00,\r\n\t    \t\"DefaultWholesaleCasePrice\": 100.00,\r\n\t    \t\"Description\": \"Example Product\",\r\n\t    \t\"Flavor\": \"Merlot\",\r\n\t    \t\"Style\": \"Merlot\",\r\n\t    \t\"GTIN\": \"012345678905\",\r\n\t    \t\"Label\": \"Example Label\",\r\n\t    \t\"NABCA\": \"01234567891\",\r\n\t    \t\"PercentAlcohol\": 6.8,\r\n\t    \t\"ProductDistribution\": \"Both\",\r\n\t    \t\"ProductType\": \"Wine\",\r\n\t    \t\"SCC\": \"10012345678902\",\r\n\t    \t\"UNIMERC\": \"012345\",\r\n\t    \t\"UnitPrice\": 10.00,\r\n\t    \t\"UPC\": \"012345678905\",\r\n\t    \t\"Varietal\": \"Merlot\",\r\n\t    \t\"Vintage\": 2010,\r\n\t    \t\"VolumeAmount\": 700.00,\r\n\t    \t\"VolumeUnit\": \"Milliliter\",\r\n\t    \t\"SubBrand\": \"Example Sub Brand\",\r\n\t    \t\"ContainerType\": \"Bottle\",\r\n\t    \t\"ContainersPerSellingUnit\": 1,\r\n\t    \t\"ShippingWeightInLbs\": 1.2\r\n     }\n\nSends a `PUT` request to `/api/v1/products/{productKey}`\n\nArguments:\n- `product_key`: The Product key\n- `brand_key`: The Brand Key (optional)\n- `body`: The new Product data\n"]    pub async fn put_products_product_key < 'a > (& 'a self , product_key : & 'a str , brand_key : Option < & 'a str > , body : & 'a types :: ShipCompliantRestApiDomainsProductEntitiesProductInput) -> Result < ResponseValue < types :: ShipCompliantRestApiMiddlewaresSwaggerResponseTypesPutProductResponse > , Error < types :: ShipCompliantRestApiMiddlewaresSwaggerResponseTypesProductBadRequestResponseOrNone > , >{
         let url = format!(
             "{}/api/v1/products/{}",
             self.baseurl,
-            encode_path(&product_key.unwrap().to_string()),
+            encode_path(&product_key.to_string()),
         );
         let mut query = Vec::with_capacity(1usize);
         if let Some(v) = &brand_key {
@@ -13260,16 +13270,18 @@ impl Client {
             400u16 => Err(Error::ErrorResponse(
                 ResponseValue::from_response(response).await?,
             )),
-            401u16 => Err(Error::ErrorResponse(ResponseValue::from_response(response).await?)),
+            401u16 => Err(Error::ErrorResponse(
+                ResponseValue::from_response(response).await?,
+            )),
             _ => Err(Error::UnexpectedResponse(response)),
         }
     }
 
-    #[doc = "Voids a Product by Product Key and Brand Key (optional)\n\nSample request:\r\n            \r\n\tDELETE /api/v1/products/PROD123\r\n\r\nIf more than one brand contains the same product key:\r\n            \r\n    DELETE /api/v1/products/PROD123?brandKey=BRAND123\n\nSends a `DELETE` request to `/api/v1/products/{productKey}`\n\nArguments:\n- `product_key`: The product number or sku\n- `brand_key`: The brand key\n"]    pub async fn delete_products_product_key < 'a > (& 'a self , product_key : Option < & 'a str > , brand_key : Option < & 'a str >) -> Result < ResponseValue < types :: ShipCompliantRestApiMiddlewaresSwaggerResponseTypesDeleteProductResponse > , Error < types :: ShipCompliantRestApiMiddlewaresSwaggerResponseTypesProductBadRequestResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesProductNotFoundResponseOrNone > , >{
+    #[doc = "Voids a Product by Product Key and Brand Key (optional)\n\nSample request:\r\n            \r\n\tDELETE /api/v1/products/PROD123\r\n\r\nIf more than one brand contains the same product key:\r\n            \r\n    DELETE /api/v1/products/PROD123?brandKey=BRAND123\n\nSends a `DELETE` request to `/api/v1/products/{productKey}`\n\nArguments:\n- `product_key`: The product number or sku\n- `brand_key`: The brand key\n"]    pub async fn delete_products_product_key < 'a > (& 'a self , product_key : & 'a str , brand_key : Option < & 'a str >) -> Result < ResponseValue < types :: ShipCompliantRestApiMiddlewaresSwaggerResponseTypesDeleteProductResponse > , Error < types :: ShipCompliantRestApiMiddlewaresSwaggerResponseTypesProductBadRequestResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesProductNotFoundResponseOrNone > , >{
         let url = format!(
             "{}/api/v1/products/{}",
             self.baseurl,
-            encode_path(&product_key.unwrap().to_string()),
+            encode_path(&product_key.to_string()),
         );
         let mut query = Vec::with_capacity(1usize);
         if let Some(v) = &brand_key {
@@ -13293,7 +13305,9 @@ impl Client {
             400u16 => Err(Error::ErrorResponse(
                 ResponseValue::from_response(response).await?,
             )),
-            401u16 => Err(Error::ErrorResponse(ResponseValue::from_response(response).await?)),
+            401u16 => Err(Error::ErrorResponse(
+                ResponseValue::from_response(response).await?,
+            )),
             404u16 => Err(Error::ErrorResponse(
                 ResponseValue::from_response(response).await?,
             )),
@@ -13320,7 +13334,9 @@ impl Client {
             400u16 => Err(Error::ErrorResponse(
                 ResponseValue::from_response(response).await?,
             )),
-            401u16 => Err(Error::ErrorResponse(ResponseValue::from_response(response).await?)),
+            401u16 => Err(Error::ErrorResponse(
+                ResponseValue::from_response(response).await?,
+            )),
             _ => Err(Error::UnexpectedResponse(response)),
         }
     }
@@ -13344,7 +13360,9 @@ impl Client {
             400u16 => Err(Error::ErrorResponse(
                 ResponseValue::from_response(response).await?,
             )),
-            401u16 => Err(Error::ErrorResponse(ResponseValue::from_response(response).await?)),
+            401u16 => Err(Error::ErrorResponse(
+                ResponseValue::from_response(response).await?,
+            )),
             _ => Err(Error::UnexpectedResponse(response)),
         }
     }
@@ -13368,16 +13386,18 @@ impl Client {
             400u16 => Err(Error::ErrorResponse(
                 ResponseValue::from_response(response).await?,
             )),
-            401u16 => Err(Error::ErrorResponse(ResponseValue::from_response(response).await?)),
+            401u16 => Err(Error::ErrorResponse(
+                ResponseValue::from_response(response).await?,
+            )),
             _ => Err(Error::UnexpectedResponse(response)),
         }
     }
 
-    #[doc = "Retrieves the specified sales order\n\nSample request:\r\n            \r\n    GET /api/v1/salesOrders/ORDER123\n\nSends a `GET` request to `/api/v1/salesOrders/{salesOrderKey}`\n\nArguments:\n- `sales_order_key`: The sales order number\n"]    pub async fn get_sales_orders_sales_order_key < 'a > (& 'a self , sales_order_key : Option < & 'a str >) -> Result < ResponseValue < types :: ShipCompliantRestApiMiddlewaresSwaggerResponseTypesGetSalesOrderSuccessResponse > , Error < types :: ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderNotFoundResponseOrNone > , >{
+    #[doc = "Retrieves the specified sales order\n\nSample request:\r\n            \r\n    GET /api/v1/salesOrders/ORDER123\n\nSends a `GET` request to `/api/v1/salesOrders/{salesOrderKey}`\n\nArguments:\n- `sales_order_key`: The sales order number\n"]    pub async fn get_sales_orders_sales_order_key < 'a > (& 'a self , sales_order_key : & 'a str) -> Result < ResponseValue < types :: ShipCompliantRestApiMiddlewaresSwaggerResponseTypesGetSalesOrderSuccessResponse > , Error < types :: ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderNotFoundResponseOrNone > , >{
         let url = format!(
             "{}/api/v1/salesOrders/{}",
             self.baseurl,
-            encode_path(&sales_order_key.unwrap().to_string()),
+            encode_path(&sales_order_key.to_string()),
         );
         #[allow(unused_mut)]
         let mut request = self
@@ -13392,7 +13412,9 @@ impl Client {
         let response = result?;
         match response.status().as_u16() {
             200u16 => ResponseValue::from_response(response).await,
-            401u16 => Err(Error::ErrorResponse(ResponseValue::from_response(response).await?)),
+            401u16 => Err(Error::ErrorResponse(
+                ResponseValue::from_response(response).await?,
+            )),
             404u16 => Err(Error::ErrorResponse(
                 ResponseValue::from_response(response).await?,
             )),
@@ -13400,11 +13422,11 @@ impl Client {
         }
     }
 
-    #[doc = "Voids a sales order\n\nSample request:\r\n            \r\n    DELETE /api/v1/salesOrders/ORDER123\n\nSends a `DELETE` request to `/api/v1/salesOrders/{salesOrderKey}`\n\nArguments:\n- `sales_order_key`: The sales order number\n"]    pub async fn delete_sales_orders_sales_order_key < 'a > (& 'a self , sales_order_key : Option < & 'a str >) -> Result < ResponseValue < types :: ShipCompliantRestApiMiddlewaresSwaggerResponseTypesDeleteSalesOrderResponse > , Error < types :: ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderNotFoundResponseOrNone > , >{
+    #[doc = "Voids a sales order\n\nSample request:\r\n            \r\n    DELETE /api/v1/salesOrders/ORDER123\n\nSends a `DELETE` request to `/api/v1/salesOrders/{salesOrderKey}`\n\nArguments:\n- `sales_order_key`: The sales order number\n"]    pub async fn delete_sales_orders_sales_order_key < 'a > (& 'a self , sales_order_key : & 'a str) -> Result < ResponseValue < types :: ShipCompliantRestApiMiddlewaresSwaggerResponseTypesDeleteSalesOrderResponse > , Error < types :: ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderNotFoundResponseOrNone > , >{
         let url = format!(
             "{}/api/v1/salesOrders/{}",
             self.baseurl,
-            encode_path(&sales_order_key.unwrap().to_string()),
+            encode_path(&sales_order_key.to_string()),
         );
         #[allow(unused_mut)]
         let mut request = self
@@ -13419,7 +13441,9 @@ impl Client {
         let response = result?;
         match response.status().as_u16() {
             200u16 => ResponseValue::from_response(response).await,
-            401u16 => Err(Error::ErrorResponse(ResponseValue::from_response(response).await?)),
+            401u16 => Err(Error::ErrorResponse(
+                ResponseValue::from_response(response).await?,
+            )),
             404u16 => Err(Error::ErrorResponse(
                 ResponseValue::from_response(response).await?,
             )),
@@ -13446,7 +13470,9 @@ impl Client {
             400u16 => Err(Error::ErrorResponse(
                 ResponseValue::from_response(response).await?,
             )),
-            401u16 => Err(Error::ErrorResponse(ResponseValue::from_response(response).await?)),
+            401u16 => Err(Error::ErrorResponse(
+                ResponseValue::from_response(response).await?,
+            )),
             _ => Err(Error::UnexpectedResponse(response)),
         }
     }
@@ -13470,7 +13496,9 @@ impl Client {
             400u16 => Err(Error::ErrorResponse(
                 ResponseValue::from_response(response).await?,
             )),
-            401u16 => Err(Error::ErrorResponse(ResponseValue::from_response(response).await?)),
+            401u16 => Err(Error::ErrorResponse(
+                ResponseValue::from_response(response).await?,
+            )),
             _ => Err(Error::UnexpectedResponse(response)),
         }
     }
@@ -13494,7 +13522,9 @@ impl Client {
             400u16 => Err(Error::ErrorResponse(
                 ResponseValue::from_response(response).await?,
             )),
-            401u16 => Err(Error::ErrorResponse(ResponseValue::from_response(response).await?)),
+            401u16 => Err(Error::ErrorResponse(
+                ResponseValue::from_response(response).await?,
+            )),
             404u16 => Err(Error::ErrorResponse(
                 ResponseValue::from_response(response).await?,
             )),
@@ -13521,7 +13551,9 @@ impl Client {
             400u16 => Err(Error::ErrorResponse(
                 ResponseValue::from_response(response).await?,
             )),
-            401u16 => Err(Error::ErrorResponse(ResponseValue::from_response(response).await?)),
+            401u16 => Err(Error::ErrorResponse(
+                ResponseValue::from_response(response).await?,
+            )),
             404u16 => Err(Error::ErrorResponse(
                 ResponseValue::from_response(response).await?,
             )),
@@ -13529,15 +13561,17 @@ impl Client {
         }
     }
 
-    #[doc = "Retrieves all tracking numbers by salesOrderKey or tracking numbers for a specified (optional) shipment key\n\nSample request:\r\n            \r\n\tGET /api/v1/salesOrders/Order123/tracking\r\n            \r\nIf a specific shipment tracking is required.\r\n            \r\n    GET /api/v1/salesOrders/Order123/tracking?shipmentKey=Ship1\n\nSends a `GET` request to `/api/v1/salesOrders/{salesOrderKey}/tracking`\n\nArguments:\n- `sales_order_key`: The sales order number\n- `shipment_key`: The Shipment key\n"]    pub async fn get_sales_orders_sales_order_key_tracking < 'a > (& 'a self , sales_order_key : Option < & 'a str > , shipment_key : Option < & 'a Vec < String > >) -> Result < ResponseValue < types :: ShipCompliantRestApiMiddlewaresSwaggerResponseTypesGetTrackingByKeyResponse > , Error < types :: ShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingNotFoundResponseOrNone > , >{
+    #[doc = "Retrieves all tracking numbers by salesOrderKey or tracking numbers for a specified (optional) shipment key\n\nSample request:\r\n            \r\n\tGET /api/v1/salesOrders/Order123/tracking\r\n            \r\nIf a specific shipment tracking is required.\r\n            \r\n    GET /api/v1/salesOrders/Order123/tracking?shipmentKey=Ship1\n\nSends a `GET` request to `/api/v1/salesOrders/{salesOrderKey}/tracking`\n\nArguments:\n- `sales_order_key`: The sales order number\n- `shipment_key`: The Shipment key\n"]    pub async fn get_sales_orders_sales_order_key_tracking < 'a > (& 'a self , sales_order_key : & 'a str , shipment_key : Option < & 'a Vec < String > >) -> Result < ResponseValue < types :: ShipCompliantRestApiMiddlewaresSwaggerResponseTypesGetTrackingByKeyResponse > , Error < types :: ShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingNotFoundResponseOrNone > , >{
         let url = format!(
             "{}/api/v1/salesOrders/{}/tracking",
             self.baseurl,
-            encode_path(&sales_order_key.unwrap().to_string()),
+            encode_path(&sales_order_key.to_string()),
         );
         let mut query = Vec::with_capacity(1usize);
         if let Some(v) = &shipment_key {
-            query.push(("shipmentKey", v.iter().next().unwrap().to_string()));
+            for k in v.into_iter() {
+                query.push(("shipmentKey[]", k.to_string()));
+            }
         }
 
         #[allow(unused_mut)]
@@ -13554,7 +13588,9 @@ impl Client {
         let response = result?;
         match response.status().as_u16() {
             200u16 => ResponseValue::from_response(response).await,
-            401u16 => Err(Error::ErrorResponse(ResponseValue::from_response(response).await?)),
+            401u16 => Err(Error::ErrorResponse(
+                ResponseValue::from_response(response).await?,
+            )),
             404u16 => Err(Error::ErrorResponse(
                 ResponseValue::from_response(response).await?,
             )),
@@ -13562,11 +13598,11 @@ impl Client {
         }
     }
 
-    #[doc = "Adds a new Tracking\n\nSample request:\r\n            \r\n\tPOST /api/v1/salesOrders/Order123/tracking\r\n\t{\r\n\t    \"ShipmentKey\": \"Ship1\",\r\n\t    \"TrackingNumbers\": [\r\n\t    \t\"ABC123456789\"\r\n\t    ]\r\n\t}\n\nSends a `POST` request to `/api/v1/salesOrders/{salesOrderKey}/tracking`\n\nArguments:\n- `sales_order_key`: The sales order number\n- `body`: The new Trackings\n"]    pub async fn post_sales_orders_sales_order_key_tracking < 'a > (& 'a self , sales_order_key : Option < & 'a str > , body : & 'a types :: ShipCompliantRestApiDomainsTrackingEntitiesTrackingInput) -> Result < ResponseValue < types :: ShipCompliantRestApiMiddlewaresSwaggerResponseTypesPostTrackingResponse > , Error < types :: ShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingNotFoundResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingBadRequestResponseOrNone > , >{
+    #[doc = "Adds a new Tracking\n\nSample request:\r\n            \r\n\tPOST /api/v1/salesOrders/Order123/tracking\r\n\t{\r\n\t    \"ShipmentKey\": \"Ship1\",\r\n\t    \"TrackingNumbers\": [\r\n\t    \t\"ABC123456789\"\r\n\t    ]\r\n\t}\n\nSends a `POST` request to `/api/v1/salesOrders/{salesOrderKey}/tracking`\n\nArguments:\n- `sales_order_key`: The sales order number\n- `body`: The new Trackings\n"]    pub async fn post_sales_orders_sales_order_key_tracking < 'a > (& 'a self , sales_order_key : & 'a str , body : & 'a types :: ShipCompliantRestApiDomainsTrackingEntitiesTrackingInput) -> Result < ResponseValue < types :: ShipCompliantRestApiMiddlewaresSwaggerResponseTypesPostTrackingResponse > , Error < types :: ShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingNotFoundResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingBadRequestResponseOrNone > , >{
         let url = format!(
             "{}/api/v1/salesOrders/{}/tracking",
             self.baseurl,
-            encode_path(&sales_order_key.unwrap().to_string()),
+            encode_path(&sales_order_key.to_string()),
         );
         #[allow(unused_mut)]
         let mut request = self
@@ -13585,7 +13621,9 @@ impl Client {
             400u16 => Err(Error::ErrorResponse(
                 ResponseValue::from_response(response).await?,
             )),
-            401u16 => Err(Error::ErrorResponse(ResponseValue::from_response(response).await?)),
+            401u16 => Err(Error::ErrorResponse(
+                ResponseValue::from_response(response).await?,
+            )),
             404u16 => Err(Error::ErrorResponse(
                 ResponseValue::from_response(response).await?,
             )),
@@ -13593,11 +13631,11 @@ impl Client {
         }
     }
 
-    #[doc = "Voids all Trackings for a sales order\n\nSample request:\r\n            \r\n\tDELETE /api/v1/salesOrders/Order123/tracking\n\nSends a `DELETE` request to `/api/v1/salesOrders/{salesOrderKey}/tracking`\n\nArguments:\n- `sales_order_key`: The sales order number\n"]    pub async fn delete_sales_orders_sales_order_key_tracking < 'a > (& 'a self , sales_order_key : Option < & 'a str >) -> Result < ResponseValue < types :: ShipCompliantRestApiMiddlewaresSwaggerResponseTypesDeleteTrackingResponse > , Error < types :: ShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingNotFoundResponseOrNone > , >{
+    #[doc = "Voids all Trackings for a sales order\n\nSample request:\r\n            \r\n\tDELETE /api/v1/salesOrders/Order123/tracking\n\nSends a `DELETE` request to `/api/v1/salesOrders/{salesOrderKey}/tracking`\n\nArguments:\n- `sales_order_key`: The sales order number\n"]    pub async fn delete_sales_orders_sales_order_key_tracking < 'a > (& 'a self , sales_order_key : & 'a str) -> Result < ResponseValue < types :: ShipCompliantRestApiMiddlewaresSwaggerResponseTypesDeleteTrackingResponse > , Error < types :: ShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingNotFoundResponseOrNone > , >{
         let url = format!(
             "{}/api/v1/salesOrders/{}/tracking",
             self.baseurl,
-            encode_path(&sales_order_key.unwrap().to_string()),
+            encode_path(&sales_order_key.to_string()),
         );
         #[allow(unused_mut)]
         let mut request = self
@@ -13612,7 +13650,9 @@ impl Client {
         let response = result?;
         match response.status().as_u16() {
             200u16 => ResponseValue::from_response(response).await,
-            401u16 => Err(Error::ErrorResponse(ResponseValue::from_response(response).await?)),
+            401u16 => Err(Error::ErrorResponse(
+                ResponseValue::from_response(response).await?,
+            )),
             404u16 => Err(Error::ErrorResponse(
                 ResponseValue::from_response(response).await?,
             )),
@@ -13620,12 +13660,12 @@ impl Client {
         }
     }
 
-    #[doc = "Voids all Trackings for a specific shipment in a sales order\n\nSample request:\r\n            \r\n\tDELETE /api/v1/salesOrders/Order123/shipment/Ship1/tracking\n\nSends a `DELETE` request to `/api/v1/salesOrders/{salesOrderKey}/shipment/{shipmentKey}/tracking`\n\nArguments:\n- `sales_order_key`: The sales order number\n- `shipment_key`: The shipment number\n"]    pub async fn delete_sales_orders_sales_order_key_shipment_shipment_key_tracking < 'a > (& 'a self , sales_order_key : Option < & 'a str > , shipment_key : Option < & 'a str >) -> Result < ResponseValue < types :: ShipCompliantRestApiMiddlewaresSwaggerResponseTypesDeleteTrackingResponse > , Error < types :: ShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingNotFoundResponseOrNone > , >{
+    #[doc = "Voids all Trackings for a specific shipment in a sales order\n\nSample request:\r\n            \r\n\tDELETE /api/v1/salesOrders/Order123/shipment/Ship1/tracking\n\nSends a `DELETE` request to `/api/v1/salesOrders/{salesOrderKey}/shipment/{shipmentKey}/tracking`\n\nArguments:\n- `sales_order_key`: The sales order number\n- `shipment_key`: The shipment number\n"]    pub async fn delete_sales_orders_sales_order_key_shipment_shipment_key_tracking < 'a > (& 'a self , sales_order_key : & 'a str , shipment_key : & 'a str) -> Result < ResponseValue < types :: ShipCompliantRestApiMiddlewaresSwaggerResponseTypesDeleteTrackingResponse > , Error < types :: ShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingNotFoundResponseOrNone > , >{
         let url = format!(
             "{}/api/v1/salesOrders/{}/shipment/{}/tracking",
             self.baseurl,
-            encode_path(&sales_order_key.unwrap().to_string()),
-            encode_path(&shipment_key.unwrap().to_string()),
+            encode_path(&sales_order_key.to_string()),
+            encode_path(&shipment_key.to_string()),
         );
         #[allow(unused_mut)]
         let mut request = self
@@ -13640,7 +13680,9 @@ impl Client {
         let response = result?;
         match response.status().as_u16() {
             200u16 => ResponseValue::from_response(response).await,
-            401u16 => Err(Error::ErrorResponse(ResponseValue::from_response(response).await?)),
+            401u16 => Err(Error::ErrorResponse(
+                ResponseValue::from_response(response).await?,
+            )),
             404u16 => Err(Error::ErrorResponse(
                 ResponseValue::from_response(response).await?,
             )),
@@ -13648,12 +13690,12 @@ impl Client {
         }
     }
 
-    #[doc = "Voids a specific tracking number for all shipments in a sales order\n\nSample request:\r\n            \r\n\tDELETE /api/v1/salesOrders/Order123/tracking/ABC123456789\n\nSends a `DELETE` request to `/api/v1/salesOrders/{salesOrderKey}/tracking/{trackingNumber}`\n\nArguments:\n- `sales_order_key`: The sales order number\n- `tracking_number`: The tracking number\n"]    pub async fn delete_sales_orders_sales_order_key_tracking_tracking_number < 'a > (& 'a self , sales_order_key : Option < & 'a str > , tracking_number : Option < & 'a str >) -> Result < ResponseValue < types :: ShipCompliantRestApiMiddlewaresSwaggerResponseTypesDeleteTrackingResponse > , Error < types :: ShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingNotFoundResponseOrNone > , >{
+    #[doc = "Voids a specific tracking number for all shipments in a sales order\n\nSample request:\r\n            \r\n\tDELETE /api/v1/salesOrders/Order123/tracking/ABC123456789\n\nSends a `DELETE` request to `/api/v1/salesOrders/{salesOrderKey}/tracking/{trackingNumber}`\n\nArguments:\n- `sales_order_key`: The sales order number\n- `tracking_number`: The tracking number\n"]    pub async fn delete_sales_orders_sales_order_key_tracking_tracking_number < 'a > (& 'a self , sales_order_key : & 'a str , tracking_number : & 'a str) -> Result < ResponseValue < types :: ShipCompliantRestApiMiddlewaresSwaggerResponseTypesDeleteTrackingResponse > , Error < types :: ShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingNotFoundResponseOrNone > , >{
         let url = format!(
             "{}/api/v1/salesOrders/{}/tracking/{}",
             self.baseurl,
-            encode_path(&sales_order_key.unwrap().to_string()),
-            encode_path(&tracking_number.unwrap().to_string()),
+            encode_path(&sales_order_key.to_string()),
+            encode_path(&tracking_number.to_string()),
         );
         #[allow(unused_mut)]
         let mut request = self
@@ -13668,7 +13710,9 @@ impl Client {
         let response = result?;
         match response.status().as_u16() {
             200u16 => ResponseValue::from_response(response).await,
-            401u16 => Err(Error::ErrorResponse(ResponseValue::from_response(response).await?)),
+            401u16 => Err(Error::ErrorResponse(
+                ResponseValue::from_response(response).await?,
+            )),
             404u16 => Err(Error::ErrorResponse(
                 ResponseValue::from_response(response).await?,
             )),
@@ -13676,13 +13720,13 @@ impl Client {
         }
     }
 
-    #[doc = "Voids a specific tracking number for a shipment in a sales order\n\nSample request:\r\n            \r\n\tDELETE /api/v1/salesOrders/Order123/shipment/Ship1/tracking/ABC123456789\n\nSends a `DELETE` request to `/api/v1/salesOrders/{salesOrderKey}/shipment/{shipmentKey}/tracking/{trackingNumber}`\n\nArguments:\n- `sales_order_key`: The sales order number\n- `shipment_key`: The shipment number\n- `tracking_number`: The tracking number\n"]    pub async fn delete_sales_orders_sales_order_key_shipment_shipment_key_tracking_tracking_number < 'a > (& 'a self , sales_order_key : Option < & 'a str > , shipment_key : Option < & 'a str > , tracking_number : Option < & 'a str >) -> Result < ResponseValue < types :: ShipCompliantRestApiMiddlewaresSwaggerResponseTypesDeleteTrackingResponse > , Error < types :: ShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingNotFoundResponseOrNone > , >{
+    #[doc = "Voids a specific tracking number for a shipment in a sales order\n\nSample request:\r\n            \r\n\tDELETE /api/v1/salesOrders/Order123/shipment/Ship1/tracking/ABC123456789\n\nSends a `DELETE` request to `/api/v1/salesOrders/{salesOrderKey}/shipment/{shipmentKey}/tracking/{trackingNumber}`\n\nArguments:\n- `sales_order_key`: The sales order number\n- `shipment_key`: The shipment number\n- `tracking_number`: The tracking number\n"]    pub async fn delete_sales_orders_sales_order_key_shipment_shipment_key_tracking_tracking_number < 'a > (& 'a self , sales_order_key : & 'a str , shipment_key : & 'a str , tracking_number : & 'a str) -> Result < ResponseValue < types :: ShipCompliantRestApiMiddlewaresSwaggerResponseTypesDeleteTrackingResponse > , Error < types :: ShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingNotFoundResponseOrNone > , >{
         let url = format!(
             "{}/api/v1/salesOrders/{}/shipment/{}/tracking/{}",
             self.baseurl,
-            encode_path(&sales_order_key.unwrap().to_string()),
-            encode_path(&shipment_key.unwrap().to_string()),
-            encode_path(&tracking_number.unwrap().to_string()),
+            encode_path(&sales_order_key.to_string()),
+            encode_path(&shipment_key.to_string()),
+            encode_path(&tracking_number.to_string()),
         );
         #[allow(unused_mut)]
         let mut request = self
@@ -13697,7 +13741,9 @@ impl Client {
         let response = result?;
         match response.status().as_u16() {
             200u16 => ResponseValue::from_response(response).await,
-            401u16 => Err(Error::ErrorResponse(ResponseValue::from_response(response).await?)),
+            401u16 => Err(Error::ErrorResponse(
+                ResponseValue::from_response(response).await?,
+            )),
             404u16 => Err(Error::ErrorResponse(
                 ResponseValue::from_response(response).await?,
             )),
@@ -13721,7 +13767,9 @@ impl Client {
         let response = result?;
         match response.status().as_u16() {
             200u16 => ResponseValue::from_response(response).await,
-            401u16 => Err(Error::ErrorResponse(ResponseValue::from_response(response).await?)),
+            401u16 => Err(Error::ErrorResponse(
+                ResponseValue::from_response(response).await?,
+            )),
             404u16 => Err(Error::ErrorResponse(
                 ResponseValue::from_response(response).await?,
             )),
@@ -13748,7 +13796,9 @@ impl Client {
             400u16 => Err(Error::ErrorResponse(
                 ResponseValue::from_response(response).await?,
             )),
-            401u16 => Err(Error::ErrorResponse(ResponseValue::from_response(response).await?)),
+            401u16 => Err(Error::ErrorResponse(
+                ResponseValue::from_response(response).await?,
+            )),
             _ => Err(Error::UnexpectedResponse(response)),
         }
     }
@@ -13772,7 +13822,9 @@ impl Client {
             400u16 => Err(Error::ErrorResponse(
                 ResponseValue::from_response(response).await?,
             )),
-            401u16 => Err(Error::ErrorResponse(ResponseValue::from_response(response).await?)),
+            401u16 => Err(Error::ErrorResponse(
+                ResponseValue::from_response(response).await?,
+            )),
             _ => Err(Error::UnexpectedResponse(response)),
         }
     }
@@ -13796,7 +13848,9 @@ impl Client {
             400u16 => Err(Error::ErrorResponse(
                 ResponseValue::from_response(response).await?,
             )),
-            401u16 => Err(Error::ErrorResponse(ResponseValue::from_response(response).await?)),
+            401u16 => Err(Error::ErrorResponse(
+                ResponseValue::from_response(response).await?,
+            )),
             _ => Err(Error::UnexpectedResponse(response)),
         }
     }
@@ -13820,7 +13874,9 @@ impl Client {
             400u16 => Err(Error::ErrorResponse(
                 ResponseValue::from_response(response).await?,
             )),
-            401u16 => Err(Error::ErrorResponse(ResponseValue::from_response(response).await?)),
+            401u16 => Err(Error::ErrorResponse(
+                ResponseValue::from_response(response).await?,
+            )),
             _ => Err(Error::UnexpectedResponse(response)),
         }
     }
@@ -13848,7 +13904,9 @@ impl Client {
             400u16 => Err(Error::ErrorResponse(
                 ResponseValue::from_response(response).await?,
             )),
-            401u16 => Err(Error::ErrorResponse(ResponseValue::from_response(response).await?)),
+            401u16 => Err(Error::ErrorResponse(
+                ResponseValue::from_response(response).await?,
+            )),
             404u16 => Err(Error::ErrorResponse(
                 ResponseValue::from_response(response).await?,
             )),
@@ -13878,7 +13936,9 @@ impl Client {
             400u16 => Err(Error::ErrorResponse(
                 ResponseValue::from_response(response).await?,
             )),
-            401u16 => Err(Error::ErrorResponse(ResponseValue::from_response(response).await?)),
+            401u16 => Err(Error::ErrorResponse(
+                ResponseValue::from_response(response).await?,
+            )),
             404u16 => Err(Error::ErrorResponse(
                 ResponseValue::from_response(response).await?,
             )),
@@ -13909,7 +13969,9 @@ impl Client {
             400u16 => Err(Error::ErrorResponse(
                 ResponseValue::from_response(response).await?,
             )),
-            401u16 => Err(Error::ErrorResponse(ResponseValue::from_response(response).await?)),
+            401u16 => Err(Error::ErrorResponse(
+                ResponseValue::from_response(response).await?,
+            )),
             404u16 => Err(Error::ErrorResponse(
                 ResponseValue::from_response(response).await?,
             )),
@@ -13936,7 +13998,9 @@ impl Client {
             400u16 => Err(Error::ErrorResponse(
                 ResponseValue::from_response(response).await?,
             )),
-            401u16 => Err(Error::ErrorResponse(ResponseValue::from_response(response).await?)),
+            401u16 => Err(Error::ErrorResponse(
+                ResponseValue::from_response(response).await?,
+            )),
             404u16 => Err(Error::ErrorResponse(
                 ResponseValue::from_response(response).await?,
             )),
