@@ -12718,51 +12718,45 @@ pub mod types {
     }
 
     #[derive(Debug, serde :: Serialize, serde :: Deserialize)]
-    #[serde(untagged)]
-    pub enum ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderNotFoundResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderAddressValidationResponseOrNone
-    {
-        ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderNotFoundResponse(
-            ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderNotFoundResponse,
-        ),
-        ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderAddressValidationResponse(
-            ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderAddressValidationResponse,
+    pub enum ShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandNotFoundResponseOrNone {
+        ShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandNotFoundResponse(
+            ShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandNotFoundResponse,
         ),
         None,
     }
 
-    impl From < ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderNotFoundResponse > for ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderNotFoundResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderAddressValidationResponseOrNone { fn from (value : ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderNotFoundResponse) -> Self { ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderNotFoundResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderAddressValidationResponseOrNone :: ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderNotFoundResponse (value) } }
-    impl From < ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderAddressValidationResponse > for ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderNotFoundResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderAddressValidationResponseOrNone { fn from (value : ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderAddressValidationResponse) -> Self { ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderNotFoundResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderAddressValidationResponseOrNone :: ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderAddressValidationResponse (value) } }
-    impl From < () > for ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderNotFoundResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderAddressValidationResponseOrNone { fn from (_ : ()) -> Self { ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderNotFoundResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderAddressValidationResponseOrNone :: None } }
-    #[derive(Debug, serde :: Serialize, serde :: Deserialize)]
-    #[serde(untagged)]
-    pub enum ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderAddressValidationResponseOrNone
+    impl From<ShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandNotFoundResponse>
+        for ShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandNotFoundResponseOrNone
     {
-        ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderAddressValidationResponse(
-            ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderAddressValidationResponse,
+        fn from(
+            value: ShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandNotFoundResponse,
+        ) -> Self {
+            ShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandNotFoundResponseOrNone :: ShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandNotFoundResponse (value)
+        }
+    }
+
+    impl From<()> for ShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandNotFoundResponseOrNone {
+        fn from(_: ()) -> Self {
+            ShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandNotFoundResponseOrNone::None
+        }
+    }
+
+    #[derive(Debug, serde :: Serialize, serde :: Deserialize)]
+    pub enum ShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandNotFoundResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandBadRequestResponseOrNone
+    {
+        ShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandNotFoundResponse(
+            ShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandNotFoundResponse,
+        ),
+        ShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandBadRequestResponse(
+            ShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandBadRequestResponse,
         ),
         None,
     }
 
-    impl From < ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderAddressValidationResponse > for ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderAddressValidationResponseOrNone { fn from (value : ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderAddressValidationResponse) -> Self { ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderAddressValidationResponseOrNone :: ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderAddressValidationResponse (value) } }
-    impl From < () > for ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderAddressValidationResponseOrNone { fn from (_ : ()) -> Self { ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderAddressValidationResponseOrNone :: None } }
+    impl From < ShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandNotFoundResponse > for ShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandNotFoundResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandBadRequestResponseOrNone { fn from (value : ShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandNotFoundResponse) -> Self { ShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandNotFoundResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandBadRequestResponseOrNone :: ShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandNotFoundResponse (value) } }
+    impl From < ShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandBadRequestResponse > for ShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandNotFoundResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandBadRequestResponseOrNone { fn from (value : ShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandBadRequestResponse) -> Self { ShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandNotFoundResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandBadRequestResponseOrNone :: ShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandBadRequestResponse (value) } }
+    impl From < () > for ShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandNotFoundResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandBadRequestResponseOrNone { fn from (_ : ()) -> Self { ShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandNotFoundResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandBadRequestResponseOrNone :: None } }
     #[derive(Debug, serde :: Serialize, serde :: Deserialize)]
-    #[serde(untagged)]
-    pub enum ShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingNotFoundResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingBadRequestResponseOrNone
-    {
-        ShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingNotFoundResponse(
-            ShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingNotFoundResponse,
-        ),
-        ShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingBadRequestResponse(
-            ShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingBadRequestResponse,
-        ),
-        None,
-    }
-
-    impl From < ShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingNotFoundResponse > for ShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingNotFoundResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingBadRequestResponseOrNone { fn from (value : ShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingNotFoundResponse) -> Self { ShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingNotFoundResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingBadRequestResponseOrNone :: ShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingNotFoundResponse (value) } }
-    impl From < ShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingBadRequestResponse > for ShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingNotFoundResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingBadRequestResponseOrNone { fn from (value : ShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingBadRequestResponse) -> Self { ShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingNotFoundResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingBadRequestResponseOrNone :: ShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingBadRequestResponse (value) } }
-    impl From < () > for ShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingNotFoundResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingBadRequestResponseOrNone { fn from (_ : ()) -> Self { ShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingNotFoundResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingBadRequestResponseOrNone :: None } }
-    #[derive(Debug, serde :: Serialize, serde :: Deserialize)]
-    #[serde(untagged)]
     pub enum ShipCompliantRestApiMiddlewaresSwaggerResponseTypesHoldLocationBadRequestResponseOrNone {
         ShipCompliantRestApiMiddlewaresSwaggerResponseTypesHoldLocationBadRequestResponse(
             ShipCompliantRestApiMiddlewaresSwaggerResponseTypesHoldLocationBadRequestResponse,
@@ -12789,35 +12783,6 @@ pub mod types {
     }
 
     #[derive(Debug, serde :: Serialize, serde :: Deserialize)]
-    #[serde(untagged)]
-    pub enum ShipCompliantRestApiMiddlewaresSwaggerResponseTypesProductBadRequestResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesProductNotFoundResponseOrNone
-    {
-        ShipCompliantRestApiMiddlewaresSwaggerResponseTypesProductBadRequestResponse(
-            ShipCompliantRestApiMiddlewaresSwaggerResponseTypesProductBadRequestResponse,
-        ),
-        ShipCompliantRestApiMiddlewaresSwaggerResponseTypesProductNotFoundResponse(
-            ShipCompliantRestApiMiddlewaresSwaggerResponseTypesProductNotFoundResponse,
-        ),
-        None,
-    }
-
-    impl From < ShipCompliantRestApiMiddlewaresSwaggerResponseTypesProductBadRequestResponse > for ShipCompliantRestApiMiddlewaresSwaggerResponseTypesProductBadRequestResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesProductNotFoundResponseOrNone { fn from (value : ShipCompliantRestApiMiddlewaresSwaggerResponseTypesProductBadRequestResponse) -> Self { ShipCompliantRestApiMiddlewaresSwaggerResponseTypesProductBadRequestResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesProductNotFoundResponseOrNone :: ShipCompliantRestApiMiddlewaresSwaggerResponseTypesProductBadRequestResponse (value) } }
-    impl From < ShipCompliantRestApiMiddlewaresSwaggerResponseTypesProductNotFoundResponse > for ShipCompliantRestApiMiddlewaresSwaggerResponseTypesProductBadRequestResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesProductNotFoundResponseOrNone { fn from (value : ShipCompliantRestApiMiddlewaresSwaggerResponseTypesProductNotFoundResponse) -> Self { ShipCompliantRestApiMiddlewaresSwaggerResponseTypesProductBadRequestResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesProductNotFoundResponseOrNone :: ShipCompliantRestApiMiddlewaresSwaggerResponseTypesProductNotFoundResponse (value) } }
-    impl From < () > for ShipCompliantRestApiMiddlewaresSwaggerResponseTypesProductBadRequestResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesProductNotFoundResponseOrNone { fn from (_ : ()) -> Self { ShipCompliantRestApiMiddlewaresSwaggerResponseTypesProductBadRequestResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesProductNotFoundResponseOrNone :: None } }
-    #[derive(Debug, serde :: Serialize, serde :: Deserialize)]
-    #[serde(untagged)]
-    pub enum ShipCompliantRestApiMiddlewaresSwaggerResponseTypesValidateAddressBadRequestResponseOrNone
-    {
-        ShipCompliantRestApiMiddlewaresSwaggerResponseTypesValidateAddressBadRequestResponse(
-            ShipCompliantRestApiMiddlewaresSwaggerResponseTypesValidateAddressBadRequestResponse,
-        ),
-        None,
-    }
-
-    impl From < ShipCompliantRestApiMiddlewaresSwaggerResponseTypesValidateAddressBadRequestResponse > for ShipCompliantRestApiMiddlewaresSwaggerResponseTypesValidateAddressBadRequestResponseOrNone { fn from (value : ShipCompliantRestApiMiddlewaresSwaggerResponseTypesValidateAddressBadRequestResponse) -> Self { ShipCompliantRestApiMiddlewaresSwaggerResponseTypesValidateAddressBadRequestResponseOrNone :: ShipCompliantRestApiMiddlewaresSwaggerResponseTypesValidateAddressBadRequestResponse (value) } }
-    impl From < () > for ShipCompliantRestApiMiddlewaresSwaggerResponseTypesValidateAddressBadRequestResponseOrNone { fn from (_ : ()) -> Self { ShipCompliantRestApiMiddlewaresSwaggerResponseTypesValidateAddressBadRequestResponseOrNone :: None } }
-    #[derive(Debug, serde :: Serialize, serde :: Deserialize)]
-    #[serde(untagged)]
     pub enum ShipCompliantRestApiMiddlewaresSwaggerResponseTypesHoldLocationBadRequestResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesHoldLocationNotFoundResponseOrNone
     {
         ShipCompliantRestApiMiddlewaresSwaggerResponseTypesHoldLocationBadRequestResponse(
@@ -12833,77 +12798,6 @@ pub mod types {
     impl From < ShipCompliantRestApiMiddlewaresSwaggerResponseTypesHoldLocationNotFoundResponse > for ShipCompliantRestApiMiddlewaresSwaggerResponseTypesHoldLocationBadRequestResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesHoldLocationNotFoundResponseOrNone { fn from (value : ShipCompliantRestApiMiddlewaresSwaggerResponseTypesHoldLocationNotFoundResponse) -> Self { ShipCompliantRestApiMiddlewaresSwaggerResponseTypesHoldLocationBadRequestResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesHoldLocationNotFoundResponseOrNone :: ShipCompliantRestApiMiddlewaresSwaggerResponseTypesHoldLocationNotFoundResponse (value) } }
     impl From < () > for ShipCompliantRestApiMiddlewaresSwaggerResponseTypesHoldLocationBadRequestResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesHoldLocationNotFoundResponseOrNone { fn from (_ : ()) -> Self { ShipCompliantRestApiMiddlewaresSwaggerResponseTypesHoldLocationBadRequestResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesHoldLocationNotFoundResponseOrNone :: None } }
     #[derive(Debug, serde :: Serialize, serde :: Deserialize)]
-    #[serde(untagged)]
-    pub enum ShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandNotFoundResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandBadRequestResponseOrNone
-    {
-        ShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandNotFoundResponse(
-            ShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandNotFoundResponse,
-        ),
-        ShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandBadRequestResponse(
-            ShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandBadRequestResponse,
-        ),
-        None,
-    }
-
-    impl From < ShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandNotFoundResponse > for ShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandNotFoundResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandBadRequestResponseOrNone { fn from (value : ShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandNotFoundResponse) -> Self { ShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandNotFoundResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandBadRequestResponseOrNone :: ShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandNotFoundResponse (value) } }
-    impl From < ShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandBadRequestResponse > for ShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandNotFoundResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandBadRequestResponseOrNone { fn from (value : ShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandBadRequestResponse) -> Self { ShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandNotFoundResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandBadRequestResponseOrNone :: ShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandBadRequestResponse (value) } }
-    impl From < () > for ShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandNotFoundResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandBadRequestResponseOrNone { fn from (_ : ()) -> Self { ShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandNotFoundResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandBadRequestResponseOrNone :: None } }
-    #[derive(Debug, serde :: Serialize, serde :: Deserialize)]
-    #[serde(untagged)]
-    pub enum ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderNotFoundResponseOrNone {
-        ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderNotFoundResponse(
-            ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderNotFoundResponse,
-        ),
-        None,
-    }
-
-    impl From<ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderNotFoundResponse>
-        for ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderNotFoundResponseOrNone
-    {
-        fn from(
-            value: ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderNotFoundResponse,
-        ) -> Self {
-            ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderNotFoundResponseOrNone :: ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderNotFoundResponse (value)
-        }
-    }
-
-    impl From<()>
-        for ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderNotFoundResponseOrNone
-    {
-        fn from(_: ()) -> Self {
-            ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderNotFoundResponseOrNone :: None
-        }
-    }
-
-    #[derive(Debug, serde :: Serialize, serde :: Deserialize)]
-    #[serde(untagged)]
-    pub enum ShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingNotFoundResponseOrNone {
-        ShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingNotFoundResponse(
-            ShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingNotFoundResponse,
-        ),
-        None,
-    }
-
-    impl From<ShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingNotFoundResponse>
-        for ShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingNotFoundResponseOrNone
-    {
-        fn from(
-            value: ShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingNotFoundResponse,
-        ) -> Self {
-            ShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingNotFoundResponseOrNone :: ShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingNotFoundResponse (value)
-        }
-    }
-
-    impl From<()>
-        for ShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingNotFoundResponseOrNone
-    {
-        fn from(_: ()) -> Self {
-            ShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingNotFoundResponseOrNone::None
-        }
-    }
-
-    #[derive(Debug, serde :: Serialize, serde :: Deserialize)]
-    #[serde(untagged)]
     pub enum ShipCompliantRestApiMiddlewaresSwaggerResponseTypesProductBadRequestResponseOrNone {
         ShipCompliantRestApiMiddlewaresSwaggerResponseTypesProductBadRequestResponse(
             ShipCompliantRestApiMiddlewaresSwaggerResponseTypesProductBadRequestResponse,
@@ -12930,7 +12824,73 @@ pub mod types {
     }
 
     #[derive(Debug, serde :: Serialize, serde :: Deserialize)]
-    #[serde(untagged)]
+    pub enum ShipCompliantRestApiMiddlewaresSwaggerResponseTypesProductBadRequestResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesProductNotFoundResponseOrNone
+    {
+        ShipCompliantRestApiMiddlewaresSwaggerResponseTypesProductBadRequestResponse(
+            ShipCompliantRestApiMiddlewaresSwaggerResponseTypesProductBadRequestResponse,
+        ),
+        ShipCompliantRestApiMiddlewaresSwaggerResponseTypesProductNotFoundResponse(
+            ShipCompliantRestApiMiddlewaresSwaggerResponseTypesProductNotFoundResponse,
+        ),
+        None,
+    }
+
+    impl From < ShipCompliantRestApiMiddlewaresSwaggerResponseTypesProductBadRequestResponse > for ShipCompliantRestApiMiddlewaresSwaggerResponseTypesProductBadRequestResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesProductNotFoundResponseOrNone { fn from (value : ShipCompliantRestApiMiddlewaresSwaggerResponseTypesProductBadRequestResponse) -> Self { ShipCompliantRestApiMiddlewaresSwaggerResponseTypesProductBadRequestResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesProductNotFoundResponseOrNone :: ShipCompliantRestApiMiddlewaresSwaggerResponseTypesProductBadRequestResponse (value) } }
+    impl From < ShipCompliantRestApiMiddlewaresSwaggerResponseTypesProductNotFoundResponse > for ShipCompliantRestApiMiddlewaresSwaggerResponseTypesProductBadRequestResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesProductNotFoundResponseOrNone { fn from (value : ShipCompliantRestApiMiddlewaresSwaggerResponseTypesProductNotFoundResponse) -> Self { ShipCompliantRestApiMiddlewaresSwaggerResponseTypesProductBadRequestResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesProductNotFoundResponseOrNone :: ShipCompliantRestApiMiddlewaresSwaggerResponseTypesProductNotFoundResponse (value) } }
+    impl From < () > for ShipCompliantRestApiMiddlewaresSwaggerResponseTypesProductBadRequestResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesProductNotFoundResponseOrNone { fn from (_ : ()) -> Self { ShipCompliantRestApiMiddlewaresSwaggerResponseTypesProductBadRequestResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesProductNotFoundResponseOrNone :: None } }
+    #[derive(Debug, serde :: Serialize, serde :: Deserialize)]
+    pub enum ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderAddressValidationResponseOrNone
+    {
+        ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderAddressValidationResponse(
+            ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderAddressValidationResponse,
+        ),
+        None,
+    }
+
+    impl From < ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderAddressValidationResponse > for ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderAddressValidationResponseOrNone { fn from (value : ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderAddressValidationResponse) -> Self { ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderAddressValidationResponseOrNone :: ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderAddressValidationResponse (value) } }
+    impl From < () > for ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderAddressValidationResponseOrNone { fn from (_ : ()) -> Self { ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderAddressValidationResponseOrNone :: None } }
+    #[derive(Debug, serde :: Serialize, serde :: Deserialize)]
+    pub enum ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderNotFoundResponseOrNone {
+        ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderNotFoundResponse(
+            ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderNotFoundResponse,
+        ),
+        None,
+    }
+
+    impl From<ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderNotFoundResponse>
+        for ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderNotFoundResponseOrNone
+    {
+        fn from(
+            value: ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderNotFoundResponse,
+        ) -> Self {
+            ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderNotFoundResponseOrNone :: ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderNotFoundResponse (value)
+        }
+    }
+
+    impl From<()>
+        for ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderNotFoundResponseOrNone
+    {
+        fn from(_: ()) -> Self {
+            ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderNotFoundResponseOrNone :: None
+        }
+    }
+
+    #[derive(Debug, serde :: Serialize, serde :: Deserialize)]
+    pub enum ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderNotFoundResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderAddressValidationResponseOrNone
+    {
+        ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderNotFoundResponse(
+            ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderNotFoundResponse,
+        ),
+        ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderAddressValidationResponse(
+            ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderAddressValidationResponse,
+        ),
+        None,
+    }
+
+    impl From < ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderNotFoundResponse > for ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderNotFoundResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderAddressValidationResponseOrNone { fn from (value : ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderNotFoundResponse) -> Self { ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderNotFoundResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderAddressValidationResponseOrNone :: ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderNotFoundResponse (value) } }
+    impl From < ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderAddressValidationResponse > for ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderNotFoundResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderAddressValidationResponseOrNone { fn from (value : ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderAddressValidationResponse) -> Self { ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderNotFoundResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderAddressValidationResponseOrNone :: ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderAddressValidationResponse (value) } }
+    impl From < () > for ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderNotFoundResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderAddressValidationResponseOrNone { fn from (_ : ()) -> Self { ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderNotFoundResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderAddressValidationResponseOrNone :: None } }
+    #[derive(Debug, serde :: Serialize, serde :: Deserialize)]
     pub enum ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderNotFoundResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderBadRequestResponseOrNone
     {
         ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderNotFoundResponse(
@@ -12946,29 +12906,57 @@ pub mod types {
     impl From < ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderBadRequestResponse > for ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderNotFoundResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderBadRequestResponseOrNone { fn from (value : ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderBadRequestResponse) -> Self { ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderNotFoundResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderBadRequestResponseOrNone :: ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderBadRequestResponse (value) } }
     impl From < () > for ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderNotFoundResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderBadRequestResponseOrNone { fn from (_ : ()) -> Self { ShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderNotFoundResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesSalesOrderBadRequestResponseOrNone :: None } }
     #[derive(Debug, serde :: Serialize, serde :: Deserialize)]
-    #[serde(untagged)]
-    pub enum ShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandNotFoundResponseOrNone {
-        ShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandNotFoundResponse(
-            ShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandNotFoundResponse,
+    pub enum ShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingNotFoundResponseOrNone {
+        ShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingNotFoundResponse(
+            ShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingNotFoundResponse,
         ),
         None,
     }
 
-    impl From<ShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandNotFoundResponse>
-        for ShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandNotFoundResponseOrNone
+    impl From<ShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingNotFoundResponse>
+        for ShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingNotFoundResponseOrNone
     {
         fn from(
-            value: ShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandNotFoundResponse,
+            value: ShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingNotFoundResponse,
         ) -> Self {
-            ShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandNotFoundResponseOrNone :: ShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandNotFoundResponse (value)
+            ShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingNotFoundResponseOrNone :: ShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingNotFoundResponse (value)
         }
     }
 
-    impl From<()> for ShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandNotFoundResponseOrNone {
+    impl From<()>
+        for ShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingNotFoundResponseOrNone
+    {
         fn from(_: ()) -> Self {
-            ShipCompliantRestApiMiddlewaresSwaggerResponseTypesBrandNotFoundResponseOrNone::None
+            ShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingNotFoundResponseOrNone::None
         }
     }
+
+    #[derive(Debug, serde :: Serialize, serde :: Deserialize)]
+    pub enum ShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingNotFoundResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingBadRequestResponseOrNone
+    {
+        ShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingNotFoundResponse(
+            ShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingNotFoundResponse,
+        ),
+        ShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingBadRequestResponse(
+            ShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingBadRequestResponse,
+        ),
+        None,
+    }
+
+    impl From < ShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingNotFoundResponse > for ShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingNotFoundResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingBadRequestResponseOrNone { fn from (value : ShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingNotFoundResponse) -> Self { ShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingNotFoundResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingBadRequestResponseOrNone :: ShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingNotFoundResponse (value) } }
+    impl From < ShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingBadRequestResponse > for ShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingNotFoundResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingBadRequestResponseOrNone { fn from (value : ShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingBadRequestResponse) -> Self { ShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingNotFoundResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingBadRequestResponseOrNone :: ShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingBadRequestResponse (value) } }
+    impl From < () > for ShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingNotFoundResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingBadRequestResponseOrNone { fn from (_ : ()) -> Self { ShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingNotFoundResponseOrShipCompliantRestApiMiddlewaresSwaggerResponseTypesTrackingBadRequestResponseOrNone :: None } }
+    #[derive(Debug, serde :: Serialize, serde :: Deserialize)]
+    pub enum ShipCompliantRestApiMiddlewaresSwaggerResponseTypesValidateAddressBadRequestResponseOrNone
+    {
+        ShipCompliantRestApiMiddlewaresSwaggerResponseTypesValidateAddressBadRequestResponse(
+            ShipCompliantRestApiMiddlewaresSwaggerResponseTypesValidateAddressBadRequestResponse,
+        ),
+        None,
+    }
+
+    impl From < ShipCompliantRestApiMiddlewaresSwaggerResponseTypesValidateAddressBadRequestResponse > for ShipCompliantRestApiMiddlewaresSwaggerResponseTypesValidateAddressBadRequestResponseOrNone { fn from (value : ShipCompliantRestApiMiddlewaresSwaggerResponseTypesValidateAddressBadRequestResponse) -> Self { ShipCompliantRestApiMiddlewaresSwaggerResponseTypesValidateAddressBadRequestResponseOrNone :: ShipCompliantRestApiMiddlewaresSwaggerResponseTypesValidateAddressBadRequestResponse (value) } }
+    impl From < () > for ShipCompliantRestApiMiddlewaresSwaggerResponseTypesValidateAddressBadRequestResponseOrNone { fn from (_ : ()) -> Self { ShipCompliantRestApiMiddlewaresSwaggerResponseTypesValidateAddressBadRequestResponseOrNone :: None } }
 }
 
 #[derive(Clone, Debug)]
